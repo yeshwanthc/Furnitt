@@ -1,12 +1,15 @@
 "use client";
 
-import React, { useState, useEffect } from "react";
+import React, { useEffect,useState } from "react";
+
 import { Inter } from "@next/font/google";
+
+import Footer from "@/components/Footer";
+import Header from "@/components/Header";
+import Preloader from "@/components/Preloader";
+
 import "bootstrap/dist/css/bootstrap.min.css";
 import "@/styles/globals.scss";
-import Preloader from "@/components/Preloader";
-import Header from "@/components/Header";
-import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 

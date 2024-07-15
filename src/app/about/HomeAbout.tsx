@@ -1,5 +1,6 @@
 import React from 'react';
 import Image from 'next/image';
+
 import AnimatedText from '@/components/TextAnimate';
 
 const AboutUs = ({ heading, description, imageSrc, imageAlt }) => {

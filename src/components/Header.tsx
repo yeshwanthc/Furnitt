@@ -1,16 +1,19 @@
 import React, { useEffect, useState } from "react";
-import "@/styles/Header.scss";
-import { menuItems, navItems } from "../data/menuData";
-import Link from "next/link";
 import Image from "next/image";
-import LogoBlack from "../../public/images/logo-black.png"
-import LogoWhite from "../../public/images/logo-white.png"
+import Link from "next/link";
+
 import {
   Sheet,
   SheetContent,
   SheetTitle,
   SheetTrigger,
 } from "@/components/ui/sheet";
+
+import LogoBlack from "../../public/images/logo-black.png"
+import LogoWhite from "../../public/images/logo-white.png"
+import { menuItems, navItems } from "../data/menuData";
+
+import "@/styles/Header.scss";
 
 
 const Header = () => {

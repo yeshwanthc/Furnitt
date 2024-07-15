@@ -2,6 +2,7 @@
 import MarqueeComponent from "@/components/Marquee";
 import SliderComponent from "@/components/SliderComponent";
 import AnimatedText from "@/components/TextAnimate";
+
 import AboutUs from "./about/HomeAbout";
 
 export default function Home() {

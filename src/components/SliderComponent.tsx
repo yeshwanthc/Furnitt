@@ -1,5 +1,7 @@
-import React, { useState, useEffect } from "react";
+import React, { useEffect,useState } from "react";
+import Image from "next/image";
 import Link from "next/link";
+
 import "@/styles/Home.scss";
 
 const StackableSlider = () => {
@@ -46,7 +48,7 @@ const StackableSlider = () => {
             key={slide.id}
             className={`stackable-slide ${index === currentSlide ? "active" : ""}`}
           >
-            <img
+            <Image
               src={slide.imageUrl}
               alt={slide.caption}
               className="w-full h-full object-cover"
