@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
 import React, { useState, useEffect } from "react";
 import { Inter } from "@next/font/google";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 import "@/styles/globals.scss";
 import Preloader from "@/components/Preloader";
 import Header from "@/components/Header";
@@ -35,8 +35,8 @@ export default function RootLayout({
           <Preloader />
         ) : (
           <div className="">
-              <Header />
-            <div>{children}</div>
+            <Header />
+            {children}
             <Footer />
           </div>
         )}

@@ -28,6 +28,7 @@ const ContactPage = () => {
             </div>
             <div className="bg-gray-100 rounded-lg p-6">
               <h3 className="text-xl font-semibold mb-4">Location</h3>
+              <p className="text-lg">Bangalore</p>
             </div>
           </div>
         </div>
