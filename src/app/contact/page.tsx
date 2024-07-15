@@ -1,21 +1,18 @@
-// pages/ContactPage.tsx
 
 import React from "react";
+import Banner from "@/components/Banner"
+
 
 const ContactPage = () => {
   return (
     <div>
-      <div
-        className="relative banner bg-cover bg-center"
-        style={{ backgroundImage: `url('images/banner.jpg')` }}
+      <Banner
+        backgroundImage="images/banner.jpg"
+        overlayColor="gray"
+        overlayOpacity={0.5}
+        heading="Contact Us"
       >
-        <div className="absolute inset-0 bg-gray-900 opacity-50"></div>
-        <div className="absolute inset-0 flex items-center justify-center">
-          <h1 className="text-4xl font-bold text-white text-center">
-            Contact Us
-          </h1>
-        </div>
-      </div>
+      </Banner>
 
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white shadow-md rounded-lg px-8 py-8 mb-8">

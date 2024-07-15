@@ -6,6 +6,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import "@/styles/globals.scss";
 import Preloader from "@/components/Preloader";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -36,6 +37,7 @@ export default function RootLayout({
           <div className="">
               <Header />
             <div>{children}</div>
+            <Footer />
           </div>
         )}
       </body>

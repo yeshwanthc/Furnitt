@@ -55,10 +55,10 @@ const Header = () => {
             {navItems.map((item, index) => (
               <li
                 key={index}
-                className="nav-settings mt-0 mb-0 mt-md-1 mb-md-1"
+                className="mt-0 mb-0 mt-md-1 mb-md-1"
               >
                 <Link
-                  className="nav-settings-value flex items-center"
+                  className="flex items-center"
                   href={item.link || "#"}
                 >
                   {item.iconSVG && (

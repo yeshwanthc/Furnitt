@@ -1,15 +1,14 @@
 import React from "react";
-
+import "@/styles/MarqueeComponent.scss";
 
 const MarqueeComponent = () => {
-
   return (
-    <div className="w-full bg-black">
-      <marquee behavior="scroll" direction="left" scrollamount="20">
-        <div className="bg-black text-white text-8xl">
-         No Hassles * No Middlemen * No Commission *
+    <div className="marquee-container">
+      <div className="marquee-wrapper">
+        <div className="marquee-content">
+          No Hassles * No Middlemen * No Commission * No Hassles * No Middlemen * No Commission *
         </div>
-      </marquee>
+      </div>
     </div>
   );
 };
