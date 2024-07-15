@@ -6,7 +6,7 @@ import Banner from "@/components/Banner"
 
 const ContactPage = () => {
   return (
-    <div>
+    <>
       <Banner
         backgroundImage="images/banner.jpg"
         overlayColor="gray"
@@ -42,7 +42,7 @@ const ContactPage = () => {
           loading="lazy"
         ></iframe>
       </div>
-    </div>
+    </>
   );
 };
 

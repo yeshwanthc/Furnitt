@@ -1,18 +1,19 @@
 import React from "react";
-
 import Banner from "@/components/Banner";
 
-const AboutPage = () => {
+
+const ServicesPage = () => {
   return (
     <>
+      {" "}
       <Banner
         backgroundImage="images/banner.jpg"
         overlayColor="gray"
         overlayOpacity={0.5}
-        heading="About Us"
+        heading="Our Services"
       ></Banner>
     </>
   );
 };
 
-export default AboutPage;
+export default ServicesPage;

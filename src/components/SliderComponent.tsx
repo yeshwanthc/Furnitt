@@ -9,21 +9,21 @@ const StackableSlider = () => {
   const slides = [
     {
       id: 1,
-      imageUrl: "images/slide1.jpg",
+      imageUrl: "/images/slide1.jpg",
       caption: "First Slide",
       heading: "Welcome to Slide 1",
       buttonLink: "/page1",
     },
     {
       id: 2,
-      imageUrl: "images/slide2.jpg",
+      imageUrl: "/images/slide2.jpg",
       caption: "Second Slide",
       heading: "Discover Slide 2",
       buttonLink: "/page2",
     },
     {
       id: 3,
-      imageUrl: "images/slide3.jpg",
+      imageUrl: "/images/slide3.jpg",
       caption: "Third Slide",
       heading: "Explore Slide 3",
       buttonLink: "/page3",
@@ -48,7 +48,7 @@ const StackableSlider = () => {
             key={slide.id}
             className={`stackable-slide ${index === currentSlide ? "active" : ""}`}
           >
-            <Image
+            <img
               src={slide.imageUrl}
               alt={slide.caption}
               className="w-full h-full object-cover"

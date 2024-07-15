@@ -4,6 +4,8 @@ import SliderComponent from "@/components/SliderComponent";
 import AnimatedText from "@/components/TextAnimate";
 
 import AboutUs from "./about/HomeAbout";
+import { CardStackDemo } from "@/components/AnimatedCard";
+import Card from "@/components/Card";
 
 export default function Home() {
   return (
@@ -31,6 +33,7 @@ export default function Home() {
         imageSrc="/images/slide2.jpg"
         imageAlt="About Us"
       />
+      <CardStackDemo />
     </div>
   );
 }
