@@ -1,9 +1,9 @@
-import { useEffect, useRef,useState } from "react";
-
+"use client"
+import { useEffect, useRef, useState, RefObject } from "react";
 import useScrollDirection from "./UseScrollDirection";
 
-const useOnScreen = (options) => {
-  const ref = useRef();
+const useOnScreen = (options): [RefObject<HTMLElement>, boolean] => {
+  const ref = useRef<HTMLElement>(null);
   const [isVisible, setIsVisible] = useState(false);
   const scrollDirection = useScrollDirection();
 

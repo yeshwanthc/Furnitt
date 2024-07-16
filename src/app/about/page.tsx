@@ -1,10 +1,7 @@
-"use client";
+"use client"
 import React from "react";
-
 import { motion } from "framer-motion";
-
 import Banner from "@/components/Banner";
-
 import useOnScreen from "@/hooks/UseOnScreen";
 
 const AboutPage = () => {
@@ -18,7 +15,7 @@ const AboutPage = () => {
   const rightSlide = {
     initial: { opacity: 0, x: 100 },
     animate: { opacity: 1, x: 0 },
-    transition: { duration: 0.8 }
+    transition: { duration: 0.8 },
   };
 
   return (
