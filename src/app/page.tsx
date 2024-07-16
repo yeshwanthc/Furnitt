@@ -5,7 +5,6 @@ import AnimatedText from "@/components/TextAnimate";
 
 import AboutUs from "./about/HomeAbout";
 import { CardStackDemo } from "@/components/AnimatedCard";
-import Card from "@/components/Card";
 
 export default function Home() {
   return (
