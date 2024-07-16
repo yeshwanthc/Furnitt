@@ -1,6 +1,7 @@
-import { ParallaxGallery } from "@/components/Gallery";
 import React from "react";
+
 import Banner from "@/components/Banner"
+import { ParallaxGallery } from "@/components/Gallery";
 
 
 const Gallery = () => {

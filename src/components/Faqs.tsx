@@ -4,6 +4,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+
 import AnimatedText from "./TextAnimate";
 
 export function Faqs() {

@@ -1,14 +1,14 @@
 "use client";
+import React from "react";
+
+import { Faqs } from "@/components/Faqs";
 import MarqueeComponent from "@/components/Marquee";
 import SliderComponent from "@/components/SliderComponent";
 import AnimatedText from "@/components/TextAnimate";
-import { scroll } from "framer-motion/dom"
 
 import AboutUs from "./about/HomeAbout";
-import { Faqs } from "@/components/Faqs";
 
 export default function Home() {
-  scroll(progress => console.log(progress))
   return (
     <div className="">
       <SliderComponent />
