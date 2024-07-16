@@ -2,6 +2,7 @@ import React, { useEffect,useState } from "react";
 import Link from "next/link";
 
 import "@/styles/Home.scss";
+import Image from "next/image";
 
 const StackableSlider = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
@@ -47,9 +48,11 @@ const StackableSlider = () => {
             key={slide.id}
             className={`stackable-slide ${index === currentSlide ? "active" : ""}`}
           >
-            <img
+            <Image
               src={slide.imageUrl}
               alt={slide.caption}
+              width={1400}
+              height={800}
               className="w-full h-full object-cover"
             />
             <div className="slide-content absolute inset-0 flex flex-col items-center justify-center text-white text-center p-4">
