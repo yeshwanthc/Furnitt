@@ -1,5 +1,6 @@
 "use client"
-import { useEffect, useRef, useState, RefObject } from "react";
+import { RefObject,useEffect, useRef, useState } from "react";
+
 import useScrollDirection from "./UseScrollDirection";
 
 const useOnScreen = (options): [RefObject<HTMLElement>, boolean] => {

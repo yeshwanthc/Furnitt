@@ -1,7 +1,10 @@
 "use client"
 import React from "react";
+
 import { motion } from "framer-motion";
+
 import Banner from "@/components/Banner";
+
 import useOnScreen from "@/hooks/UseOnScreen";
 
 const AboutPage = () => {
