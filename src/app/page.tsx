@@ -5,7 +5,6 @@ import AnimatedText from "@/components/TextAnimate";
 import { scroll } from "framer-motion/dom"
 
 import AboutUs from "./about/HomeAbout";
-import { CardStackDemo } from "@/components/AnimatedCard";
 import { Faqs } from "@/components/Faqs";
 
 export default function Home() {
