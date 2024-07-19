@@ -9,8 +9,8 @@ import AnimatedText from "./TextAnimate";
 
 export function Faqs() {
   return (
-    <div className="h-[100vh] border-y-black border-b-2">
-      <div className="flex container-main py-10 items-center h-full">
+    <div className="border-y-black border-b-2 py-[60px]">
+      <div className="flex container-main items-center h-full">
         <div className="w-1/2">
           <AnimatedText
             text="FAQ's"

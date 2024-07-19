@@ -10,8 +10,8 @@ const AboutUs = () => {
   let imageSrc = "/images/slide2.jpg";
   let imageAlt = "About Us";
   return (
-    <div className="h-[100vh] border-y-black border-b-2">
-    <div className="about-us-section container-main flex h-full flex-col md:flex-row items-center py-10">
+    <div className="border-y-black border-b-2 py-[60px]">
+    <div className="about-us-section container-main flex h-full flex-col md:flex-row items-center">
       <div className="md:w-[70%]">
         <i>
           <AnimatedText text={heading} />

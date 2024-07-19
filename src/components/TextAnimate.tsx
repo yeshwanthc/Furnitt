@@ -36,7 +36,7 @@ const AnimatedText = ({
   ));
 
   return (
-    <div className="py-[20px]" ref={ref}>
+    <div className="" ref={ref}>
       
         <h1 className="animated-text">{words}</h1>
     </div>

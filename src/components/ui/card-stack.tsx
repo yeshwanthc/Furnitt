@@ -1,9 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
-
 import { motion } from "framer-motion";
-
-let interval: any;
 
 type Card = {
   id: number;
@@ -24,52 +21,63 @@ export const CardStack = ({
   const CARD_OFFSET = offset || 10;
   const SCALE_FACTOR = scaleFactor || 0.06;
   const [cards, setCards] = useState<Card[]>(items);
+  const [lastScrollY, setLastScrollY] = useState<number>(0);
+  const [stackedCount, setStackedCount] = useState<number>(1);
 
   useEffect(() => {
-    startFlipping();
+    const handleScroll = () => {
+      const currentScrollY = window.scrollY;
 
-    return () => clearInterval(interval);
-  }, []);
-  const startFlipping = () => {
-    interval = setInterval(() => {
-      setCards((prevCards: Card[]) => {
-        const newArray = [...prevCards]; // create a copy of the array
-        newArray.unshift(newArray.pop()!); // move the last element to the front
-        return newArray;
-      });
-    }, 5000);
-  };
+      if (currentScrollY > lastScrollY) {
+        // scrolling down
+        setStackedCount((prevCount) =>
+          Math.min(prevCount + 1, cards.length)
+        );
+      } else if (currentScrollY < lastScrollY) {
+        // scrolling up
+        setStackedCount((prevCount) =>
+          Math.max(prevCount - 1, 1)
+        );
+      }
+
+      setLastScrollY(currentScrollY);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, [lastScrollY, cards.length]);
 
   return (
-    <div className="relative  h-60 w-60 md:h-60 md:w-96">
-      {cards.map((card, index) => {
-        return (
-          <motion.div
-            key={card.id}
-            className="absolute dark:bg-black bg-white h-60 w-60 md:h-60 md:w-96 rounded-3xl p-4 shadow-xl border border-neutral-200 dark:border-white/[0.1]  shadow-black/[0.1] dark:shadow-white/[0.05] flex flex-col justify-between"
-            style={{
-              transformOrigin: "top center",
-            }}
-            animate={{
-              top: index * -CARD_OFFSET,
-              scale: 1 - index * SCALE_FACTOR, // decrease scale for cards that are behind
-              zIndex: cards.length - index, //  decrease z-index for the cards that are behind
-            }}
-          >
-            <div className="font-normal text-neutral-700 dark:text-neutral-200">
-              {card.content}
-            </div>
-            <div>
-              <p className="text-neutral-500 font-medium dark:text-white">
-                {card.name}
-              </p>
-              <p className="text-neutral-400 font-normal dark:text-neutral-200">
-                {card.designation}
-              </p>
-            </div>
-          </motion.div>
-        );
-      })}
+    <div className="relative h-60 w-60 md:h-60 md:w-96">
+      {cards.slice(0, stackedCount).map((card, index) => (
+        <motion.div
+          key={card.id}
+          className="absolute dark:bg-black bg-white h-60 w-60 md:h-60 md:w-96 rounded-3xl p-4 shadow-xl border border-neutral-200 dark:border-white/[0.1] shadow-black/[0.1] dark:shadow-white/[0.05] flex flex-col justify-between"
+          style={{
+            transformOrigin: "top center",
+          }}
+          animate={{
+            top: index * CARD_OFFSET,
+            scale: 1 - index * SCALE_FACTOR,
+            zIndex: stackedCount - index,
+          }}
+        >
+          <div className="font-normal text-neutral-700 dark:text-neutral-200">
+            {card.content}
+          </div>
+          <div>
+            <p className="text-neutral-500 font-medium dark:text-white">
+              {card.name}
+            </p>
+            <p className="text-neutral-400 font-normal dark:text-neutral-200">
+              {card.designation}
+            </p>
+          </div>
+        </motion.div>
+      ))}
     </div>
   );
 };

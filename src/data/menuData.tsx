@@ -28,7 +28,7 @@ const menuItems: MenuItem[] = [
   { label: "Home", link: "/" },
   { label: "About Us", link: "/about" },
   { label: "Services", link: "/services" },
-  { label: "Products", link: "/" },
+  { label: "Products", link: "/products" },
   { label: "Gallery", link: "/gallery" },
   { label: "Contact Us", link: "/contact" },
 ];

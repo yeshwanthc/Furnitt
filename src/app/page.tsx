@@ -7,19 +7,22 @@ import SliderComponent from "@/components/SliderComponent";
 import AnimatedText from "@/components/TextAnimate";
 
 import AboutUs from "./about/HomeAbout";
+import CardsContainer from "@/components/CardsContainer";
 
 export default function Home() {
   return (
     <div className="">
       <SliderComponent />
       <div className="container-main">
-      <div className="py-[60px] md:w-1/2">
-        <AnimatedText text="We're the Manufacturers – straight from our factory to your home." />
-      </div>
+        <div className="py-[60px] md:w-1/2">
+          <AnimatedText text="We're the Manufacturers – straight from our factory to your home." />
+        </div>
       </div>
       <MarqueeComponent />
       <AboutUs />
       <Faqs />
+      <CardsContainer />
+     
     </div>
   );
 }

@@ -97,8 +97,9 @@
   }
 
   .container-main{
-    max-width: 1400px;
+    max-width: 1200px;
     margin: auto;
+  
   }
 
 
@@ -126,4 +127,13 @@
   display: inline-block;
 }
 
+
+
+.animated-text {
+  position: sticky;
+  top: 150px; /* Adjust as per your layout */
+  z-index: 10; /* Ensure it appears above other content */
+  background-color: white; /* Adjust background as needed */
+  padding: 10px; /* Adjust padding as needed */
+}
 
