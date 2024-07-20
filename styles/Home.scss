@@ -91,4 +91,21 @@ $mobileScreen: 648px;
   opacity: 1;
 }
 
+//client carousel
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.animate-infinite-scroll {
+  animation: scroll 20s linear infinite;
+}
+
+
+
 

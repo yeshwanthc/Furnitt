@@ -8,6 +8,7 @@ import AnimatedText from "@/components/TextAnimate";
 
 import AboutUs from "./about/HomeAbout";
 import CardsContainer from "@/components/CardsContainer";
+import LogoCarousel from "@/components/LogoCarousel";
 
 export default function Home() {
   return (
@@ -22,7 +23,7 @@ export default function Home() {
       <AboutUs />
       <Faqs />
       <CardsContainer />
-     
+     <LogoCarousel />
     </div>
   );
 }
