@@ -9,6 +9,7 @@ import AnimatedText from "@/components/TextAnimate";
 import AboutUs from "./about/HomeAbout";
 import CardsContainer from "@/components/CardsContainer";
 import LogoCarousel from "@/components/LogoCarousel";
+import { BentoGridMain } from "@/components/BentoGrid";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
       <Faqs />
       <CardsContainer />
      <LogoCarousel />
+     <BentoGridMain />
     </div>
   );
 }
