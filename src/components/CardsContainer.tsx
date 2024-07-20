@@ -4,7 +4,7 @@ import CardStack from "./CardStack";
 import AnimatedText from "./TextAnimate";
 
 const CardsContainer = () => {
-  const [isTextVisible, setIsTextVisible] = useState(true); // State to control visibility of AnimatedText
+  const [isTextVisible] = useState(true); // State to control visibility of AnimatedText
 
   const cards = [
     { id: 1, content: "Card 1" },
