@@ -1,9 +1,12 @@
 "use client";
 import Image from "next/image";
-import Facebook from "../../public/images/facebook.svg";
-import Disney from "../../public/images/disney.svg";
+
 import Airbnb from "../../public/images/airbnb.svg";
+import Disney from "../../public/images/disney.svg";
+import Facebook from "../../public/images/facebook.svg";
+
 import AnimatedText from "./TextAnimate";
+
 import "@/styles/Home.scss";
 
 export default function LogoCarousel() {

@@ -1,6 +1,7 @@
 import React, { useState } from "react";
-import AnimatedText from "./TextAnimate";
+
 import CardStack from "./CardStack";
+import AnimatedText from "./TextAnimate";
 
 const CardsContainer = () => {
   const [isTextVisible, setIsTextVisible] = useState(true); // State to control visibility of AnimatedText
@@ -14,9 +15,9 @@ const CardsContainer = () => {
     { id: 6, content: "Card 6" },
   ];
 
-  const handleUnmount = () => {
-    setIsTextVisible(false); 
-  };
+  // const handleUnmount = () => {
+  //   setIsTextVisible(false); 
+  // };
 
   return (
     <div className="border-y-black border-b-2 py-[60px]">

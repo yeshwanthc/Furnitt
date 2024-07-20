@@ -1,5 +1,6 @@
 "use client";
 import React, { useEffect, useState } from "react";
+
 import { motion } from "framer-motion";
 
 type Card = {
@@ -20,7 +21,7 @@ export const CardStack = ({
 }) => {
   const CARD_OFFSET = offset || 10;
   const SCALE_FACTOR = scaleFactor || 0.06;
-  const [cards, setCards] = useState<Card[]>(items);
+  const [cards] = useState<Card[]>(items);
   const [lastScrollY, setLastScrollY] = useState<number>(0);
   const [stackedCount, setStackedCount] = useState<number>(1);
 

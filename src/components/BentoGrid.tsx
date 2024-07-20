@@ -1,6 +1,6 @@
 "use client"
 import React from "react";
-import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
+
 import {
   IconArrowWaveRightUp,
   IconBoxAlignRightFilled,
@@ -10,6 +10,8 @@ import {
   IconSignature,
   IconTableColumn,
 } from "@tabler/icons-react";
+
+import { BentoGrid, BentoGridItem } from "./ui/bento-grid";
 
 export function BentoGridMain() {
   return (
