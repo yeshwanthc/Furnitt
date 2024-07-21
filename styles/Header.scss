@@ -95,8 +95,10 @@ $mobileScreen:648px;
 .mobile-menu {
   display: none;
 
+
   @media (max-width: $mobileScreen) {
     display: block;
+
   }
 }
 .mobile-links{
@@ -107,4 +109,8 @@ $mobileScreen:648px;
 a{
 
 }
+}
+
+.data-\[state\=open\]\:duration-500[data-state=open]{
+  z-index: 101;
 }
