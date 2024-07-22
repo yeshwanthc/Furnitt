@@ -4,45 +4,46 @@ import { motion } from "framer-motion";
 import Banner from "@/components/Banner";
 import useOnScreen from "@/hooks/UseOnScreen";
 import AnimatedText from "@/components/TextAnimate";
+import Image from "next/image";
 
 const sections = [
   {
     title: "About Our Company",
     content:
       "Our company, XYZ Corp, has been at the forefront of innovation, providing cutting-edge solutions to our clients. We pride ourselves on our commitment to excellence and our ability to deliver high-quality products and services.",
-    img: "images/slide1.jpg",
+    img: "/images/slide1.jpg",
   },
   {
     title: "Our Team",
     content: [
-      { name: "John Doe", position: "CEO", img: "images/slide1.jpg" },
-      { name: "Jane Smith", position: "CTO", img: "images/slide1.jpg" },
-      { name: "Alice Johnson", position: "COO", img: "images/slide1.jpg" },
+      { name: "John Doe", position: "CEO", img: "/images/slide1.jpg" },
+      { name: "Jane Smith", position: "CTO", img: "/images/slide1.jpg" },
+      { name: "Alice Johnson", position: "COO", img: "/images/slide1.jpg" },
     ],
   },
   {
     title: "What We Do",
     content:
       "We provide a wide range of services including software development, consulting, and project management. Our team of experts is dedicated to delivering innovative solutions that meet the unique needs of our clients.",
-    img: "images/slide1.jpg",
+    img: "/images/slide1.jpg",
   },
   {
     title: "Our Vision",
     content:
       "Our vision is to be a global leader in technology solutions, empowering businesses to achieve their goals through innovative and efficient solutions. We aim to foster a culture of continuous improvement and excellence in all our endeavors.",
-    img: "images/slide1.jpg",
+    img: "/images/slide1.jpg",
   },
   {
     title: "Our History",
     content:
       "Founded in 2000, XYZ Corp started as a small tech startup and has grown into a leading technology solutions provider. Over the years, we have expanded our services and our team, always staying true to our commitment to innovation and excellence.",
-    img: "images/slide1.jpg",
+    img: "/images/slide1.jpg",
   },
   {
     title: "Contact Us",
     content:
       "If you have any questions or would like to learn more about our services, please do not hesitate to contact us at info@xyzcorp.com.",
-    img: "images/slide1.jpg",
+    img: "/images/slide1.jpg",
   },
 ];
 
@@ -91,9 +92,11 @@ const AboutPage = () => {
                       transition={rightSlide.transition}
                       className="team-member bg-white p-6 shadow-lg rounded-lg"
                     >
-                      <img
+                      <Image
                         src={member.img}
                         alt={member.name}
+                        width={300}
+                        height={300}
                         className="mb-4 w-full h-32 object-cover rounded-lg"
                       />
                       <h3 className="text-2xl font-bold mb-2">{member.name}</h3>
