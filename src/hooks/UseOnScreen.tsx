@@ -1,7 +1,7 @@
 "use client"
 import { useState, useEffect, useRef, RefObject } from 'react';
 
-const useOnScreen = (options: IntersectionObserverInit): [RefObject<HTMLDivElement>, boolean] => {
+const useOnScreen = (options): [RefObject<HTMLDivElement>, boolean] => {
   const ref = useRef<HTMLDivElement>(null);
   const [isVisible, setIsVisible] = useState(false);
 
