@@ -1,8 +1,7 @@
-"use client";
 import React from "react";
 import { motion } from "framer-motion";
 import Banner from "@/components/Banner";
-import useOnScreen from "@/hooks/UseOnScreen";
+import useVisibilityRefs from "@/hooks/useVisibilityRefs";
 import AnimatedText from "@/components/TextAnimate";
 import Image from "next/image";
 
@@ -48,7 +47,7 @@ const sections = [
 ];
 
 const AboutPage = () => {
-  const visibilityRefs = sections.map(() => useOnScreen({ threshold: 0.1 }));
+  const visibilityRefs = useVisibilityRefs(sections.length);
 
   const rightSlide = {
     initial: { opacity: 0, x: 100 },
