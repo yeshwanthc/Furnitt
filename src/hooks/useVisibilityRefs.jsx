@@ -1,5 +1,6 @@
-import { useRef } from 'react';
-import useOnScreen from '@/hooks/UseOnScreen';
+"use client"
+import { useRef } from "react";
+import useOnScreen from "@/hooks/UseOnScreen";
 
 const useVisibilityRefs = (sectionsLength) => {
   const visibilityRefs = useRef([]);
