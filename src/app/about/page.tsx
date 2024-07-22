@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import { motion } from "framer-motion";
 import Banner from "@/components/Banner";
@@ -46,7 +47,7 @@ const sections = [
   },
 ];
 
-const AboutPage = () => {
+const AboutPage: React.FC = () => {
   const visibilityRefs = useVisibilityRefs(sections.length);
 
   const rightSlide = {
@@ -63,7 +64,6 @@ const AboutPage = () => {
         overlayOpacity={0.5}
         heading="About Us"
       />
-
       <div className="container-main py-16">
         {sections.map((section, index) => {
           const [ref, isVisible] = visibilityRefs[index];
