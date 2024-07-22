@@ -70,8 +70,7 @@ $mobileScreen: 648px;
   }
 }
 
-
-//cards 
+//cards
 .card-stack-container {
   position: relative;
   height: 100vh;
@@ -83,7 +82,9 @@ $mobileScreen: 648px;
   width: 100%;
   transform: translateY(100vh);
   opacity: 0;
-  transition: transform 0.5s ease-out, opacity 0.5s ease-out;
+  transition:
+    transform 0.5s ease-out,
+    opacity 0.5s ease-out;
 }
 
 .card-stack.animate {
@@ -105,7 +106,3 @@ $mobileScreen: 648px;
 .animate-infinite-scroll {
   animation: scroll 20s linear infinite;
 }
-
-
-
-

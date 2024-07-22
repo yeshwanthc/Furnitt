@@ -24,8 +24,8 @@ export default function Home() {
       <AboutUs />
       <Faqs />
       <CardsContainer />
-     <LogoCarousel />
-     <BentoGridMain />
+      <LogoCarousel />
+      <BentoGridMain />
     </div>
   );
 }

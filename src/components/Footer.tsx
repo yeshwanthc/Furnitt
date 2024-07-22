@@ -1,5 +1,5 @@
-import React from 'react';
-import Link from 'next/link';
+import React from "react";
+import Link from "next/link";
 
 const Footer = () => {
   const linkGroups = [
@@ -46,7 +46,9 @@ const Footer = () => {
         <div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-4">
           {linkGroups.map((group) => (
             <div key={group.title}>
-              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">{group.title}</h2>
+              <h2 className="mb-6 text-sm font-semibold text-gray-900 uppercase dark:text-white">
+                {group.title}
+              </h2>
               <ul className="text-gray-500 dark:text-gray-400 font-medium">
                 {group.links.map((link) => (
                   <li className="mb-4" key={link.text}>
@@ -61,9 +63,10 @@ const Footer = () => {
         </div>
       </div>
       <div className="px-4 py-6 bg-gray-100 dark:bg-gray-700 md:flex md:items-center md:justify-between">
-        <div className='container-main'>
-        <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">© 2024 <a href="/">Furnitt</a>. All Rights Reserved.</span>
-
+        <div className="container-main">
+          <span className="text-sm text-gray-500 dark:text-gray-300 sm:text-center">
+            © 2024 <a href="/">Furnitt</a>. All Rights Reserved.
+          </span>
         </div>
       </div>
     </footer>

@@ -1,8 +1,6 @@
-
 import React from "react";
 
-import Banner from "@/components/Banner"
-
+import Banner from "@/components/Banner";
 
 const ContactPage = () => {
   return (
@@ -12,8 +10,7 @@ const ContactPage = () => {
         overlayColor="gray"
         overlayOpacity={0.5}
         heading="Contact Us"
-      >
-      </Banner>
+      ></Banner>
 
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white shadow-md rounded-lg px-8 py-8 mb-8">

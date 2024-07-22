@@ -1,8 +1,10 @@
-"use client"
+"use client";
 import { useEffect, useState } from "react";
 
 const useScrollDirection = (): "up" | "down" | null => {
-  const [scrollDirection, setScrollDirection] = useState<"up" | "down" | null>(null);
+  const [scrollDirection, setScrollDirection] = useState<"up" | "down" | null>(
+    null,
+  );
 
   useEffect(() => {
     let lastScrollY = window.pageYOffset;

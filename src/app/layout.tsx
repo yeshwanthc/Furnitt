@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect,useState } from "react";
+import React, { useEffect, useState } from "react";
 
 import { Inter } from "@next/font/google";
 
@@ -23,7 +23,7 @@ export default function RootLayout({
   useEffect(() => {
     const timer = setTimeout(() => {
       setLoading(false);
-    }, 2000); 
+    }, 2000);
     return () => clearTimeout(timer);
   }, []);
 

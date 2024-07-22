@@ -1,5 +1,5 @@
-"use client"
-import { useState, useEffect, useRef, RefObject } from 'react';
+"use client";
+import { useState, useEffect, useRef, RefObject } from "react";
 
 const useOnScreen = (options): [RefObject<HTMLDivElement>, boolean] => {
   const ref = useRef<HTMLDivElement>(null);

@@ -31,14 +31,10 @@ export const CardStack = ({
 
       if (currentScrollY > lastScrollY) {
         // scrolling down
-        setStackedCount((prevCount) =>
-          Math.min(prevCount + 1, cards.length)
-        );
+        setStackedCount((prevCount) => Math.min(prevCount + 1, cards.length));
       } else if (currentScrollY < lastScrollY) {
         // scrolling up
-        setStackedCount((prevCount) =>
-          Math.max(prevCount - 1, 1)
-        );
+        setStackedCount((prevCount) => Math.max(prevCount - 1, 1));
       }
 
       setLastScrollY(currentScrollY);

@@ -11,25 +11,25 @@ const AboutUs = () => {
   let imageAlt = "About Us";
   return (
     <div className="border-y-black border-b-2 py-[60px]">
-    <div className="about-us-section container-main flex h-full flex-col md:flex-row items-center">
-      <div className="md:w-[70%]">
-        <i>
-          <AnimatedText text={heading} />
-        </i>
-        <p className="mt-1 text-lg text-gray-700 dark:text-gray-300">
-          {description}
-        </p>
+      <div className="about-us-section container-main flex h-full flex-col md:flex-row items-center">
+        <div className="md:w-[70%]">
+          <i>
+            <AnimatedText text={heading} />
+          </i>
+          <p className="mt-1 text-lg text-gray-700 dark:text-gray-300">
+            {description}
+          </p>
+        </div>
+        <div className="md:w-[20%]">
+          <Image
+            src={imageSrc}
+            alt={imageAlt}
+            width={400}
+            height={400}
+            className="shadow-lg"
+          />
+        </div>
       </div>
-      <div className="md:w-[20%]">
-        <Image
-          src={imageSrc}
-          alt={imageAlt}
-          width={400}
-          height={400}
-          className="shadow-lg"
-        />
-      </div>
-    </div>
     </div>
   );
 };

@@ -1,8 +1,14 @@
-import React from 'react';
+import React from "react";
 
-import PropTypes from 'prop-types';
+import PropTypes from "prop-types";
 
-const Banner = ({ backgroundImage, overlayColor, overlayOpacity, heading, children }) => {
+const Banner = ({
+  backgroundImage,
+  overlayColor,
+  overlayOpacity,
+  heading,
+  children,
+}) => {
   return (
     <div
       className="relative banner bg-cover bg-center"
@@ -13,10 +19,10 @@ const Banner = ({ backgroundImage, overlayColor, overlayOpacity, heading, childr
         style={{ backgroundColor: overlayColor, opacity: overlayOpacity }}
       ></div>
       <div className="absolute inset-0 flex items-center justify-center">
-        <h1 className="text-4xl font-bold text-white text-center">
-          {heading}
-        </h1>
-        {children && <div className="text-white text-center mt-4">{children}</div>}
+        <h1 className="text-4xl font-bold text-white text-center">{heading}</h1>
+        {children && (
+          <div className="text-white text-center mt-4">{children}</div>
+        )}
       </div>
     </div>
   );
@@ -31,7 +37,7 @@ Banner.propTypes = {
 };
 
 Banner.defaultProps = {
-  overlayColor: 'gray',
+  overlayColor: "gray",
   overlayOpacity: 0.5,
   children: null,
 };

@@ -22,8 +22,7 @@ const CardsContainer = () => {
   return (
     <div className="border-y-black border-b-2 py-[60px]">
       <div className="container-main flex flex-col md:flex-row justify-between">
-  
-          {isTextVisible && <AnimatedText text="Our Products" />}
+        {isTextVisible && <AnimatedText text="Our Products" />}
 
         <div className="md:w-1/2">
           <CardStack items={cards} />

@@ -9,12 +9,11 @@ import {
   SheetTrigger,
 } from "@/components/ui/sheet";
 
-import LogoBlack from "../../public/images/logo-black.png"
-import LogoWhite from "../../public/images/logo-white.png"
+import LogoBlack from "../../public/images/logo-black.png";
+import LogoWhite from "../../public/images/logo-white.png";
 import { menuItems, navItems } from "../data/menuData";
 
 import "@/styles/Header.scss";
-
 
 const Header = () => {
   const [isSheetOpen, setIsSheetOpen] = useState(false);
@@ -54,14 +53,8 @@ const Header = () => {
         <div className="navigation navigation-top md:block hidden">
           <ul className="flex justify-between">
             {navItems.map((item, index) => (
-              <li
-                key={index}
-                className="mt-0 mb-0 mt-md-1 mb-md-1"
-              >
-                <Link
-                  className="flex items-center"
-                  href={item.link || "#"}
-                >
+              <li key={index} className="mt-0 mb-0 mt-md-1 mb-md-1">
+                <Link className="flex items-center" href={item.link || "#"}>
                   {item.iconSVG && (
                     <span
                       className="icon mr-1 rotate-90"
@@ -77,7 +70,12 @@ const Header = () => {
         <div className="navigation-main py-2">
           <div className="md:px-0 flex justify-between items-center container-main header">
             <Link href="/" className="logo">
-            <Image src={isScrolled ? LogoBlack : LogoWhite} alt="Logo" height='150' width='150' />
+              <Image
+                src={isScrolled ? LogoBlack : LogoWhite}
+                alt="Logo"
+                height="150"
+                width="150"
+              />
             </Link>
 
             <div className="menu md:block hidden">
@@ -108,9 +106,7 @@ const Header = () => {
                     <path d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z"></path>
                   </svg>
                 </SheetTrigger>
-                <SheetTitle>
-
-                </SheetTitle>
+                <SheetTitle></SheetTitle>
                 <SheetContent className="bg-black text-white">
                   <ul className="flex gap-4 row mobile-links">
                     {menuItems.map((item, index) => (

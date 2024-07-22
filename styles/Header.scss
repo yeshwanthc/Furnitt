@@ -1,7 +1,7 @@
 $mainColor: #000;
 $secondaryColor: #fff;
-$hoverColor: red; 
-$mobileScreen:648px;
+$hoverColor: red;
+$mobileScreen: 648px;
 
 .navbar-fixed {
   z-index: 100;
@@ -12,8 +12,7 @@ $mobileScreen:648px;
     color: $secondaryColor;
     transition: color 0.3s ease-in-out;
     &:hover {
-      color: $hoverColor; 
-
+      color: $hoverColor;
     }
   }
 
@@ -21,7 +20,7 @@ $mobileScreen:648px;
     fill: $secondaryColor;
     transition: fill 0.3s ease-in-out;
     &:hover {
-      fill: $hoverColor !important; 
+      fill: $hoverColor !important;
     }
   }
 }
@@ -40,7 +39,7 @@ $mobileScreen:648px;
     transition: color 0.3s ease-in;
 
     &:hover {
-      color: $hoverColor !important; 
+      color: $hoverColor !important;
     }
   }
 
@@ -48,7 +47,7 @@ $mobileScreen:648px;
     fill: $mainColor !important;
     transition: fill 0.3s ease-out;
     &:hover {
-      fill: $hoverColor !important; 
+      fill: $hoverColor !important;
     }
   }
 }
@@ -60,21 +59,21 @@ $mobileScreen:648px;
     text-transform: uppercase;
     padding: 10px;
     color: $secondaryColor;
-    transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1.0);
+    transition: color 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 
     &:hover {
-      color: $hoverColor; 
+      color: $hoverColor;
 
       &::after {
         content: "";
         display: block;
         width: 100%;
         height: 3px;
-        background: $hoverColor; 
+        background: $hoverColor;
         transition: width 0.3s ease-in-out;
         position: absolute;
         left: 0;
-        bottom: -2px; 
+        bottom: -2px;
       }
     }
 
@@ -82,12 +81,12 @@ $mobileScreen:648px;
       content: "";
       display: block;
       width: 0;
-      height: 3px; 
-      background: $hoverColor; 
+      height: 3px;
+      background: $hoverColor;
       transition: width 0.3s ease-in-out;
       position: absolute;
       left: 0;
-      bottom: -2px; 
+      bottom: -2px;
     }
   }
 }
@@ -95,22 +94,19 @@ $mobileScreen:648px;
 .mobile-menu {
   display: none;
 
-
   @media (max-width: $mobileScreen) {
     display: block;
-
   }
 }
-.mobile-links{
+.mobile-links {
   padding-top: 30px;
-  li{
- padding: 10px;
+  li {
+    padding: 10px;
   }
-a{
-
+  a {
+  }
 }
-}
 
-.data-\[state\=open\]\:duration-500[data-state=open]{
+.data-\[state\=open\]\:duration-500[data-state="open"] {
   z-index: 101;
 }

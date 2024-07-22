@@ -20,7 +20,9 @@ const CardStack: React.FC<CardStackProps> = ({ items }) => {
             className="sticky"
           >
             <div className="h-[200px] w-[300px] md:h-[300px] md:w-[400px] p-4 md:p-10 border-gray-200 rounded border-2 bg-white">
-              <h1 className="text-lg md:text-xl font-semibold">{item.content}</h1>
+              <h1 className="text-lg md:text-xl font-semibold">
+                {item.content}
+              </h1>
               <p className="text-sm md:text-base">
                 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio
                 voluptate necessitatibus sint quasi veniam iure mollitia aperiam
