@@ -1,7 +1,9 @@
 "use client";
 import React from "react";
 import Image from "next/image";
+
 import { motion } from "framer-motion";
+
 import Banner from "@/components/Banner";
 import AnimatedText from "@/components/TextAnimate";
 
