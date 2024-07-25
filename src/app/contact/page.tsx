@@ -15,7 +15,7 @@ const ContactPage = () => {
       <div className="max-w-4xl mx-auto px-4 py-8">
         <div className="bg-white shadow-md rounded-lg px-8 py-8 mb-8">
           <h2 className="text-2xl font-bold mb-4">Contact Information</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             <div className="bg-gray-100 rounded-lg p-6">
               <h3 className="text-xl font-semibold mb-4">Email</h3>
               <p className="text-lg">contact@example.com</p>
@@ -29,8 +29,61 @@ const ContactPage = () => {
               <p className="text-lg">Bangalore</p>
             </div>
           </div>
+
+          <h2 className="text-2xl font-bold mb-4">Contact Us</h2>
+          <form className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <div className="flex flex-col">
+              <label className="mb-2 font-semibold">Name</label>
+              <input
+                type="text"
+                className="p-3 border rounded-lg"
+                placeholder="Your Name"
+              />
+            </div>
+            <div className="flex flex-col">
+              <label className="mb-2 font-semibold">Email</label>
+              <input
+                type="email"
+                className="p-3 border rounded-lg"
+                placeholder="Your Email"
+              />
+            </div>
+            <div className="flex flex-col md:col-span-2">
+              <label className="mb-2 font-semibold">Message</label>
+              <textarea
+                className="p-3 border rounded-lg"
+                rows={5}
+                placeholder="Your Message"
+              ></textarea>
+            </div>
+            <div className="md:col-span-2 flex justify-center">
+              <button
+                type="submit"
+                className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg"
+              >
+                Send Message
+              </button>
+            </div>
+          </form>
+
+          <h2 className="text-2xl font-bold mb-4">Follow Us</h2>
+          <div className="flex justify-center space-x-6">
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+              <img src="/icons/facebook.svg" alt="Facebook" className="w-8 h-8" />
+            </a>
+            <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+              <img src="/icons/twitter.svg" alt="Twitter" className="w-8 h-8" />
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" rel="noopener noreferrer">
+              <img src="/icons/linkedin.svg" alt="LinkedIn" className="w-8 h-8" />
+            </a>
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+              <img src="/icons/instagram.svg" alt="Instagram" className="w-8 h-8" />
+            </a>
+          </div>
         </div>
       </div>
+
       <div className="">
         <iframe
           className="rounded-lg w-full h-64"

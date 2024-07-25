@@ -3,6 +3,10 @@ $secondaryColor: #fff;
 $hoverColor: red;
 $mobileScreen: 648px;
 
+.header-container{
+  max-width: 1200px;
+  margin: auto;
+}
 .navbar-fixed {
   z-index: 100;
   background-color: transparent;

@@ -103,6 +103,10 @@ h6 {
 .container-main {
   max-width: 1200px;
   margin: auto;
+  @media (max-width: $mobileScreen) {
+   padding: 0 20px;
+   overflow: hidden;
+  }
 }
 
 .banner {
@@ -134,4 +138,30 @@ h6 {
   z-index: 10; /* Ensure it appears above other content */
   background-color: white; /* Adjust background as needed */
   padding: 10px; /* Adjust padding as needed */
+}
+
+
+//Services Page 
+
+.services-section, .projects-section {
+  padding: 20px;
+}
+
+.services-section ul, .projects-section ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.services-section li, .projects-section li {
+  margin-bottom: 20px;
+}
+
+.services-section h2, .projects-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.services-section p, .projects-section p {
+  font-size: 1rem;
+  margin: 0;
 }

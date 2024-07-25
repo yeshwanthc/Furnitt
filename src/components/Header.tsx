@@ -48,7 +48,7 @@ const Header = () => {
   };
 
   return (
-    <nav className="navbar-fixed container-main relative">
+    <nav className="navbar-fixed header-container relative">
       <div className="container-fluid p-0 absolute">
         <div className="navigation navigation-top md:block hidden">
           <ul className="flex justify-between">
@@ -68,7 +68,7 @@ const Header = () => {
           </ul>
         </div>
         <div className="navigation-main py-2">
-          <div className="md:px-0 flex justify-between items-center container-main header">
+          <div className="md:px-0 flex justify-between items-center header-container header">
             <Link href="/" className="logo">
               <Image
                 src={isScrolled ? LogoBlack : LogoWhite}
