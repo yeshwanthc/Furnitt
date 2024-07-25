@@ -1,10 +1,9 @@
 "use client";
 import React from "react";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import Banner from "@/components/Banner";
-import useVisibilityRefs from "@/hooks/useVisibilityRefs";
 import AnimatedText from "@/components/TextAnimate";
-import Image from "next/image";
 
 const sections = [
   {
@@ -48,8 +47,6 @@ const sections = [
 ];
 
 const AboutPage: React.FC = () => {
-  const visibilityRefs = useVisibilityRefs(sections.length);
-
   const rightSlide = {
     initial: { opacity: 0, x: 100 },
     animate: { opacity: 1, x: 0 },
@@ -65,71 +62,66 @@ const AboutPage: React.FC = () => {
         heading="About Us"
       />
       <div className="container-main py-16">
-        {sections.map((section, index) => {
-          const [ref, isVisible] = visibilityRefs[index];
-          return (
-            <section ref={ref} className="mb-16" key={index}>
-              <AnimatedText
-                text={section.title}
-                delayPerWord={0.4}
-                duration={0.8}
-              />
-              {Array.isArray(section.content) ? (
-                <motion.div
-                  initial={{ opacity: 0 }}
-                  animate={isVisible ? { opacity: 1 } : { opacity: 0 }}
-                  transition={{ delay: 0.5 }}
-                  className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
-                >
-                  {section.content.map((member, idx) => (
-                    <motion.div
-                      key={idx}
-                      initial={rightSlide.initial}
-                      animate={
-                        isVisible ? rightSlide.animate : rightSlide.initial
-                      }
-                      transition={rightSlide.transition}
-                      className="team-member bg-white p-6 shadow-lg rounded-lg"
-                    >
-                      <Image
-                        src={member.img}
-                        alt={member.name}
-                        width={300}
-                        height={300}
-                        className="mb-4 w-full h-32 object-cover rounded-lg"
-                      />
-                      <h3 className="text-2xl font-bold mb-2">{member.name}</h3>
-                      <p className="text-lg">{member.position}</p>
-                    </motion.div>
-                  ))}
-                </motion.div>
-              ) : (
-                <div>
-                  <motion.img
+        {sections.map((section, index) => (
+          <section className="mb-16" key={index}>
+            <AnimatedText
+              text={section.title}
+              delayPerWord={0.4}
+              duration={0.8}
+            />
+            {Array.isArray(section.content) ? (
+              <motion.div
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ delay: 0.5 }}
+                className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+              >
+                {section.content.map((member, idx) => (
+                  <motion.div
+                    key={idx}
                     initial={rightSlide.initial}
-                    animate={
-                      isVisible ? rightSlide.animate : rightSlide.initial
-                    }
+                    whileInView={rightSlide.animate}
+                    viewport={{ once: true }}
                     transition={rightSlide.transition}
-                    src={section.img}
-                    alt={section.title}
-                    className="mb-4 w-full h-64 object-cover rounded-lg"
-                  />
-                  <motion.p
-                    initial={rightSlide.initial}
-                    animate={
-                      isVisible ? rightSlide.animate : rightSlide.initial
-                    }
-                    transition={rightSlide.transition}
-                    className="text-lg"
+                    className="team-member bg-white p-6 shadow-lg rounded-lg"
                   >
-                    {section.content}
-                  </motion.p>
-                </div>
-              )}
-            </section>
-          );
-        })}
+                    <Image
+                      src={member.img}
+                      alt={member.name}
+                      width={300}
+                      height={300}
+                      className="mb-4 w-full h-32 object-cover rounded-lg"
+                    />
+                    <h3 className="text-2xl font-bold mb-2">{member.name}</h3>
+                    <p className="text-lg">{member.position}</p>
+                  </motion.div>
+                ))}
+              </motion.div>
+            ) : (
+              <div>
+                <motion.img
+                  initial={rightSlide.initial}
+                  whileInView={rightSlide.animate}
+                  viewport={{ once: true }}
+                  transition={rightSlide.transition}
+                  src={section.img}
+                  alt={section.title}
+                  className="mb-4 w-full h-64 object-cover rounded-lg"
+                />
+                <motion.p
+                  initial={rightSlide.initial}
+                  whileInView={rightSlide.animate}
+                  viewport={{ once: true }}
+                  transition={rightSlide.transition}
+                  className="text-lg"
+                >
+                  {section.content}
+                </motion.p>
+              </div>
+            )}
+          </section>
+        ))}
       </div>
     </div>
   );

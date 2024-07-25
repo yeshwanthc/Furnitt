@@ -34,7 +34,6 @@
     ".next/types/**/*.ts",
     "src/app/about/page.jsx",
     "src/hooks/UseScrollDirection.jsx",
-    "src/hooks/useVisibilityRefs.tsx"
   ],
   "exclude": ["node_modules"]
 }
