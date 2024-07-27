@@ -7,11 +7,11 @@ const AboutUs = () => {
   let heading = "About Us";
   let description =
     "Furnitt is a professional interior design firm dedicated to infusing creativity and artistic flair into your home. We believe your home is your castle and should reflect your personality, making you swell with pride. As enablers of beautiful living spaces, we have been adding peace, style, and class to countless homes since our foundation, and we can do the same for you. For us, your home is not just a space needing an authentic touch; it's a place where you share moments with loved ones. We blend creativity, design, luxury, and architecture to give your home a splendid, heartwarming, and glamorous look. When it comes to designing a beautiful home, you deserve the best in innovation. From the moment you engage our services, we deliver perfection. You will experience flexibility, freedom, and extreme professionalism from the initial liaison to the final product. Contact us today to see how we can transform your home.";
-  let imageSrc = "/images/slide2.jpg";
+  let imageSrc = "/images/poster.jpg";
   let imageAlt = "About Us";
   return (
-    <div className="border-y-black border-b-2 py-[60px]">
-      <div className="about-us-section container-main flex h-full flex-col md:flex-row items-center">
+    <div className=" py-[60px]">
+      <div className="about-us-section container-main flex gap-8 h-full flex-col md:flex-row items-center">
         <div className="md:w-[70%]">
           <i>
             <AnimatedText text={heading} />

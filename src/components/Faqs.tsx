@@ -33,22 +33,7 @@ export function Faqs() {
             <AccordionTrigger>question3?</AccordionTrigger>
             <AccordionContent>answer</AccordionContent>
           </AccordionItem>
-          <AccordionItem value="item-5">
-            <AccordionTrigger>question3?</AccordionTrigger>
-            <AccordionContent>answer</AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-6">
-            <AccordionTrigger>question3?</AccordionTrigger>
-            <AccordionContent>answer</AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-7">
-            <AccordionTrigger>question3?</AccordionTrigger>
-            <AccordionContent>answer</AccordionContent>
-          </AccordionItem>
-          <AccordionItem value="item-8">
-            <AccordionTrigger>question3?</AccordionTrigger>
-            <AccordionContent>answer</AccordionContent>
-          </AccordionItem>
+        
         </Accordion>
       </div>
     </div>

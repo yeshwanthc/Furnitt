@@ -6,20 +6,44 @@ import AnimatedText from "@/components/TextAnimate";
 
 const services = [
   {
-    title: "Residential Design",
-    description: "Transforming your home into a beautiful and functional space.",
+    title: "Wood Works (Modular & Carpentry)",
+    description: "Modernize your home with custom woodwork that reflects your personality. From TV mounts to extensive wardrobes and storage units, we handle everything.",
+    img: "/images/slide1.jpg",
   },
   {
-    title: "Commercial Design",
-    description: "Creating efficient and inspiring workspaces for your business.",
+    title: "Furniture",
+    description: "Add a touch of class with fabulously designed furniture, making your home look and feel amazing.",
+    img: "/images/slide1.jpg",
   },
   {
-    title: "Landscape Design",
-    description: "Designing outdoor spaces that complement your lifestyle.",
+    title: "Wall Covers",
+    description: "Decorate your interior spaces to make rooms look bigger and brighter with murals, paintings, stone cladding, and designer wallpapers.",
+    img: "/images/slide1.jpg",
   },
   {
-    title: "Furniture Design",
-    description: "Custom furniture pieces tailored to your needs and style.",
+    title: "Designer Ceilings",
+    description: "Often neglected but essential, we use quality materials like wood, POP, and artex to give your ceiling a much-needed touch-up.",
+    img: "/images/slide1.jpg",
+  },
+  {
+    title: "Glass Innovation",
+    description: "Install sleek and stylish glass stairs, partitions, cabinets, designer doors, and more. The possibilities with this versatile material are endless.",
+    img: "/images/slide1.jpg",
+  },
+  {
+    title: "Amazing Flooring",
+    description: "Whether it’s solid wood for your living room or marble for your kitchen, we provide flooring that gives your home a perfect finish.",
+    img: "/images/slide1.jpg",
+  },
+  {
+    title: "Home Automation",
+    description: "Control your heating, lighting, and more from your phone, no matter where you are. Live in the next century with our automation systems.",
+    img: "/images/slide1.jpg",
+  },
+  {
+    title: "Electrical Fixtures",
+    description: "Brighten up your home with designer lights, fans, hobs, chimneys, and more, making it both functional and beautiful.",
+    img: "/images/slide1.jpg",
   },
 ];
 
@@ -49,26 +73,20 @@ const ServicesPage = () => {
       />
       <div className="container mx-auto p-4">
         <div className="text-center my-8">
-          <AnimatedText
-            text="Our Services"
-            delayPerWord={0.4}
-            duration={0.8}
-          />
+          <AnimatedText text="Our Services" delayPerWord={0.4} duration={0.8} />
+          <p className="mt-4 text-gray-700">We handle all types of work, big or small. Here’s what we can do for you:</p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service, index) => (
             <div key={index} className="service-card p-6 bg-white rounded-lg shadow-lg transition-transform transform hover:scale-105">
+              <img src={service.img} alt={service.title} className="w-full h-40 object-cover mb-4 rounded-lg" />
               <h2 className="text-xl font-bold mb-2">{service.title}</h2>
               <p className="text-gray-700">{service.description}</p>
             </div>
           ))}
         </div>
         <div className="text-center my-8">
-          <AnimatedText
-            text="Recent Projects"
-            delayPerWord={0.4}
-            duration={0.8}
-          />
+          <AnimatedText text="Recent Projects" delayPerWord={0.4} duration={0.8} />
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {recentProjects.map((project, index) => (

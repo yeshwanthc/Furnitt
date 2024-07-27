@@ -119,7 +119,7 @@ h6 {
   font-size: 48px;
   line-height: 1.2;
   @media (max-width: $mobileScreen) {
-    font-size: 38px;
+    font-size: 28px;
     line-height: 1.2;
   }
 }
@@ -134,10 +134,10 @@ h6 {
 
 .animated-text {
   position: sticky;
-  top: 150px; /* Adjust as per your layout */
-  z-index: 10; /* Ensure it appears above other content */
-  background-color: white; /* Adjust background as needed */
-  padding: 10px; /* Adjust padding as needed */
+  top: 150px; 
+  z-index: 10; 
+  background-color: white; 
+  padding: 10px; 
 }
 
 

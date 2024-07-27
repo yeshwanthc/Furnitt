@@ -1,9 +1,11 @@
+import Image from "next/image";
 import React from "react";
 
 type Card = {
   id: number;
   content: string;
-  description:string;
+  description: string;
+  svg: string;  
 };
 
 type CardStackProps = {
@@ -20,12 +22,22 @@ const CardStack: React.FC<CardStackProps> = ({ items }) => {
             style={{ top: `${150 + index * 10}px` }}
             className="sticky"
           >
-            <div className="p-4 md:p-10 border-gray-200 rounded border-2 bg-white">
-              <h1 className="text-lg md:text-xl font-semibold">
-                {item.content}
-              </h1>
+            <div className="md:p-[40px] border-gray rounded-[20px] border-1 bg-white">
+              <div className="flex items-center justify-between gap-4 mb-2">
+              <h1 className="text-lg md:text-3xl font-semibold">
+                  {item.content}
+                </h1>
+                <Image
+                  src={item.svg}
+                  height={100}
+                  width={100}
+                  alt={item.content}
+                  className="object-contain"
+                />
+              
+              </div>
               <p className="text-sm md:text-base">
-               {item.description}
+                {item.description}
               </p>
             </div>
           </li>

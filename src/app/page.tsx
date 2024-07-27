@@ -10,6 +10,7 @@ import SliderComponent from "@/components/SliderComponent";
 import AnimatedText from "@/components/TextAnimate";
 
 import AboutUs from "./about/HomeAbout";
+import OurProducts from "./products/OurProducts";
 
 export default function Home() {
   return (
@@ -22,10 +23,10 @@ export default function Home() {
       </div>
       <MarqueeComponent />
       <AboutUs />
-  
       <CardsContainer />
+      <OurProducts />
       <LogoCarousel />
-      <BentoGridMain />
+      {/* <BentoGridMain /> */}
       <Faqs />
     </div>
   );

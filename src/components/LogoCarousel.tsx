@@ -23,7 +23,8 @@ export default function LogoCarousel() {
   ];
 
   return (
-    <div className="container-main overflow-hidden clients py-[60px]">
+    <div className="py-[60px]">
+    <div className="container-main overflow-hidden clients">
       <div className="py-[60px]">
         <AnimatedText text="Our Clients" />
       </div>
@@ -46,6 +47,7 @@ export default function LogoCarousel() {
           ))}
         </ul>
       </div>
+    </div>
     </div>
   );
 }
