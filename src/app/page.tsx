@@ -1,7 +1,6 @@
 "use client";
 import React from "react";
 
-import { BentoGridMain } from "@/components/BentoGrid";
 import CardsContainer from "@/components/CardsContainer";
 import { Faqs } from "@/components/Faqs";
 import LogoCarousel from "@/components/LogoCarousel";
@@ -26,7 +25,6 @@ export default function Home() {
       <CardsContainer />
       <OurProducts />
       <LogoCarousel />
-      {/* <BentoGridMain /> */}
       <Faqs />
     </div>
   );
