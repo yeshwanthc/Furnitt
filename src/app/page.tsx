@@ -5,6 +5,7 @@ import CardsContainer from "@/components/CardsContainer";
 import { Faqs } from "@/components/Faqs";
 import LogoCarousel from "@/components/LogoCarousel";
 import MarqueeComponent from "@/components/Marquee";
+import QuickLinks from "@/components/QuickLinks";
 import SliderComponent from "@/components/SliderComponent";
 import AnimatedText from "@/components/TextAnimate";
 
@@ -14,6 +15,7 @@ import OurProducts from "./products/OurProducts";
 export default function Home() {
   return (
     <div className="">
+      <QuickLinks />
       <SliderComponent />
       <div className="container-main">
         <div className="py-[60px] md:w-1/2">

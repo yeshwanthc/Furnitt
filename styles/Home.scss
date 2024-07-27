@@ -94,15 +94,26 @@ $mobileScreen: 648px;
 
 //client carousel
 
-@keyframes scroll {
+@keyframes infinite-scroll {
   0% {
-    transform: translateX(0);
+    transform: translateX(0%);
   }
   100% {
-    transform: translateX(-100%);
+    transform: translateX(-50%);
   }
 }
 
-.animate-infinite-scroll {
-  animation: scroll 20s linear infinite;
+.clients .animate-infinite-scroll {
+  animation: infinite-scroll 15s linear infinite;
+  display: flex;
+  width: calc(200%); 
+}
+
+.clients .relative ul li {
+  width: calc(100% / 18); 
+}
+
+
+.clients .relative ul li {
+  width: calc(100% / 18); // Adjust the divisor based on the number of logos times two
 }

@@ -22,32 +22,25 @@ export default function LogoCarousel() {
     { src: Airbnb, alt: "Airbnb" },
   ];
 
+  // Duplicate the logos array to create a seamless loop
+  const doubledLogos = [...logos, ...logos];
+
   return (
     <div className="py-[60px]">
-    <div className="container-main overflow-hidden clients">
-      <div className="py-[60px]">
-        <AnimatedText text="Our Clients" />
+      <div className="container-main overflow-hidden clients">
+        <div className="py-[60px]">
+          <AnimatedText text="Our Clients" />
+        </div>
+        <div className="relative inline-flex flex-nowrap overflow-hidden">
+          <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
+            {doubledLogos.map((logo, index) => (
+              <li key={index}>
+                <Image src={logo.src} alt={logo.alt} />
+              </li>
+            ))}
+          </ul>
+        </div>
       </div>
-      <div className="relative inline-flex flex-nowrap overflow-hidden">
-        <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
-          {logos.map((logo, index) => (
-            <li key={index}>
-              <Image src={logo.src} alt={logo.alt} />
-            </li>
-          ))}
-        </ul>
-        <ul
-          className="flex absolute top-0 fill-black items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll"
-          aria-hidden="true"
-        >
-          {logos.map((logo, index) => (
-            <li key={index}>
-              <Image src={logo.src} alt={logo.alt} />
-            </li>
-          ))}
-        </ul>
-      </div>
-    </div>
     </div>
   );
 }
