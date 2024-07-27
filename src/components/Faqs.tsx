@@ -10,8 +10,8 @@ import AnimatedText from "./TextAnimate";
 export function Faqs() {
   return (
     <div className="md:py-[100px]">
-      <div className="flex container-main items-center h-full">
-        <div className="w-1/2">
+      <div className="flex flex-col container-main items-start h-full">
+        <div className="">
           <AnimatedText
             text="FAQ's"
             delayPerWord={0.4}
@@ -20,7 +20,7 @@ export function Faqs() {
           />
         </div>
 
-        <Accordion type="single" collapsible className="w-1/2">
+        <Accordion type="single" collapsible className="md:w-1/2">
           <AccordionItem value="item-1">
             <AccordionTrigger>
               What makes Furnitt unique in its approach to interior design?
