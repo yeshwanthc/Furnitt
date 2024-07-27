@@ -9,7 +9,7 @@ import AnimatedText from "./TextAnimate";
 
 export function Faqs() {
   return (
-    <div className="border-y-black border-b-2 md:py-[200px]">
+    <div className="md:py-[100px]">
       <div className="flex container-main items-center h-full">
         <div className="w-1/2">
           <AnimatedText
@@ -55,7 +55,7 @@ export function Faqs() {
           </AccordionItem>
           <AccordionItem value="item-4">
             <AccordionTrigger>
-              qWhat is the timeline for completing a project with Furnitt?
+              What is the timeline for completing a project with Furnitt?
             </AccordionTrigger>
             <AccordionContent>
               The entire process, from the initial meeting to the final

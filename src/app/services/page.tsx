@@ -2,6 +2,7 @@
 import React from "react";
 
 import Banner from "@/components/Banner";
+import HowItWorks from "@/components/Helper";
 import AnimatedText from "@/components/TextAnimate";
 
 const services = [
@@ -96,6 +97,7 @@ const ServicesPage = () => {
             </div>
           ))}
         </div>
+        <HowItWorks />
       </div>
     </>
   );

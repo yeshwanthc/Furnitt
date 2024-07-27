@@ -5,6 +5,7 @@ import CardsContainer from "@/components/CardsContainer";
 import { Faqs } from "@/components/Faqs";
 import LogoCarousel from "@/components/LogoCarousel";
 import MarqueeComponent from "@/components/Marquee";
+import ModularInteriors from "@/components/ModularInteriors";
 import QuickLinks from "@/components/QuickLinks";
 import SliderComponent from "@/components/SliderComponent";
 import AnimatedText from "@/components/TextAnimate";
@@ -24,6 +25,7 @@ export default function Home() {
       </div>
       <MarqueeComponent />
       <AboutUs />
+      <ModularInteriors />
       <CardsContainer />
       <OurProducts />
       <LogoCarousel />
