@@ -48,10 +48,10 @@ const Header = () => {
   };
 
   return (
-    <nav className="navbar-fixed header-container relative">
+    <nav className="navbar-fixed relative">
       <div className="container-fluid p-0 absolute">
-        <div className="navigation navigation-top md:block hidden">
-          <ul className="flex justify-between">
+        <div className="navigation navigation-top md:block hidden bg-[#28282886]">
+          <ul className="flex justify-end header-container gap-8">
             {navItems.map((item, index) => (
               <li key={index} className="mt-0 mb-0 mt-md-1 mb-md-1">
                 <Link className="flex items-center" href={item.link || "#"}>

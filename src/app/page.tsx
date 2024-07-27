@@ -22,10 +22,11 @@ export default function Home() {
       </div>
       <MarqueeComponent />
       <AboutUs />
-      <Faqs />
+  
       <CardsContainer />
       <LogoCarousel />
       <BentoGridMain />
+      <Faqs />
     </div>
   );
 }

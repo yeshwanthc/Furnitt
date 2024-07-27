@@ -3,6 +3,7 @@ import React from "react";
 type Card = {
   id: number;
   content: string;
+  description:string;
 };
 
 type CardStackProps = {
@@ -19,15 +20,12 @@ const CardStack: React.FC<CardStackProps> = ({ items }) => {
             style={{ top: `${150 + index * 10}px` }}
             className="sticky"
           >
-            <div className="h-[200px] w-[300px] md:h-[300px] md:w-[400px] p-4 md:p-10 border-gray-200 rounded border-2 bg-white">
+            <div className="p-4 md:p-10 border-gray-200 rounded border-2 bg-white">
               <h1 className="text-lg md:text-xl font-semibold">
                 {item.content}
               </h1>
               <p className="text-sm md:text-base">
-                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Odio
-                voluptate necessitatibus sint quasi veniam iure mollitia aperiam
-                ipsam minus rem dolorum sed fugit, ratione eos sapiente nam
-                voluptatum. Dolor, doloremque.
+               {item.description}
               </p>
             </div>
           </li>
