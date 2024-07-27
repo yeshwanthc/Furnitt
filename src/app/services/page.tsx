@@ -14,17 +14,17 @@ const services = [
   {
     title: "Furniture",
     description: "Add a touch of class with fabulously designed furniture, making your home look and feel amazing.",
-    img: "/images/slide1.jpg",
+    img: "/images/slide2.jpg",
   },
   {
     title: "Wall Covers",
     description: "Decorate your interior spaces to make rooms look bigger and brighter with murals, paintings, stone cladding, and designer wallpapers.",
-    img: "/images/slide1.jpg",
+    img: "/images/slide3.jpg",
   },
   {
     title: "Designer Ceilings",
     description: "Often neglected but essential, we use quality materials like wood, POP, and artex to give your ceiling a much-needed touch-up.",
-    img: "/images/slide1.jpg",
+    img: "/images/banner.jpg",
   },
   {
     title: "Glass Innovation",
@@ -34,12 +34,12 @@ const services = [
   {
     title: "Amazing Flooring",
     description: "Whether it’s solid wood for your living room or marble for your kitchen, we provide flooring that gives your home a perfect finish.",
-    img: "/images/slide1.jpg",
+    img: "/images/slide2.jpg",
   },
   {
     title: "Home Automation",
     description: "Control your heating, lighting, and more from your phone, no matter where you are. Live in the next century with our automation systems.",
-    img: "/images/slide1.jpg",
+    img: "/images/slide3.jpg",
   },
   {
     title: "Electrical Fixtures",

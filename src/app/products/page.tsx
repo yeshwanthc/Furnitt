@@ -18,7 +18,7 @@ const products = [
   },
   {
     title: "Wooden Dining Table",
-    image: "/images/slide2.jpg",
+    image: "/images/slide1.jpg",
     description:
       "A sturdy wooden dining table that can comfortably seat six people.",
     details: [
@@ -29,7 +29,7 @@ const products = [
   },
   {
     title: "Ergonomic Office Chair",
-    image: "/images/slide2.jpg",
+    image: "/images/slide3.jpg",
     description:
       "An ergonomic office chair designed for maximum comfort during long hours of work.",
     details: [
@@ -40,7 +40,7 @@ const products = [
   },
   {
     title: "Queen Bed Frame",
-    image: "/images/slide2.jpg",
+    image: "/images/slide1.jpg",
     description:
       "A stylish queen bed frame made from high-quality wood with a classic finish.",
     details: [
