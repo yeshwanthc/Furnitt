@@ -28,18 +28,7 @@ const sections = [
       "We provide a wide range of services including software development, consulting, and project management. Our team of experts is dedicated to delivering innovative solutions that meet the unique needs of our clients.",
     img: "/images/slide1.jpg",
   },
-  {
-    title: "Our Vision",
-    content:
-      "Our vision is to be a global leader in technology solutions, empowering businesses to achieve their goals through innovative and efficient solutions. We aim to foster a culture of continuous improvement and excellence in all our endeavors.",
-    img: "/images/slide1.jpg",
-  },
-  {
-    title: "Our History",
-    content:
-      "Founded in 2000, XYZ Corp started as a small tech startup and has grown into a leading technology solutions provider. Over the years, we have expanded our services and our team, always staying true to our commitment to innovation and excellence.",
-    img: "/images/slide1.jpg",
-  },
+  
 ];
 
 const AboutPage: React.FC = () => {
@@ -62,8 +51,6 @@ const AboutPage: React.FC = () => {
           <section className="mb-16" key={index}>
             <AnimatedText
               text={section.title}
-              // delayPerWord={0.4}
-              // duration={0.8}
             />
             {Array.isArray(section.content) ? (
               <motion.div

@@ -41,12 +41,12 @@ const ContactPage = () => {
         heading="Contact Us"
       ></Banner>
 
-      <div className="container-main mx-auto px-4 py-8">
-        <div className="shadow-lg rounded-lg px-8 py-8 mb-8">
+      <div className="container-main m-t-80 px-4 py-8">
+        <div className="shadow-lg px-8 py-8 mb-8  bg-white ">
           <h2 className="text-3xl font-bold mb-6">Contact Information</h2>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
             {contactDetails.map((detail, index) => (
-              <div key={index} className="bg-gray-100 rounded-lg p-6">
+              <div key={index} className="rounded-lg p-6 border-gray-100 border-2 bg-slate-50">
                 <h3 className="text-xl font-semibold mb-4">{detail.title}</h3>
                 <p className="text-lg">{detail.value}</p>
               </div>
@@ -54,7 +54,7 @@ const ContactPage = () => {
           </div>
           <div className="">
             <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
-            <form className="bg-white rounded-lg p-8 grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+            <form className="rounded-lg p-8 grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
               <div className="flex flex-col">
                 <label className="mb-2 font-semibold">Name</label>
                 <input
@@ -90,7 +90,7 @@ const ContactPage = () => {
             </form>
           </div>
 
-          <h2 className="text-3xl text-white font-bold mb-6">Follow Us</h2>
+          <h2 className="text-3xl font-bold mb-6">Follow Us</h2>
           <div className="flex justify-center space-x-6">
             {socialLinks.map((link, index) => (
               <a
