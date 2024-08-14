@@ -33,7 +33,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "src/app/about/page.jsx",
-    "src/hooks/UseScrollDirection.jsx",
+    "src/hooks/UseScrollDirection.jsx", "src/components/split/index.jsx", "src/components/newui/Intro.jsx",
   ],
   "exclude": ["node_modules"]
 }

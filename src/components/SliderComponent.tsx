@@ -10,29 +10,37 @@ const StackableSlider = () => {
     {
       id: 1,
       imageUrl: "/images/slide1.jpg",
-      heading: "Bringing Your Dream Home to Life – Easily and Affordably!",
-      caption:
-        "Furnitt transforms homes with professionalism and affordability, offering exceptional results at reasonable prices.",
-      buttonLink: "/contact",
+      heading: "Welcome to Furnitt",
+      caption: "Discover the art of transforming spaces with our expert interior design services. Your journey to a stunning home starts here.",
+      buttonLink: "/services", 
+      buttonText: "Explore More",
     },
     {
       id: 2,
       imageUrl: "/images/slide2.jpg",
-      heading: "Comprehensive Interior Design Services",
-      caption:
-        "From ceilings to walls and electrical fixes to automation, Furnitt's team of industry trade professionals covers all your needs.",
-      buttonLink: "/services",
+      heading: "Your Dream Home Awaits",
+      caption: "Let us bring your vision to life with tailored designs that reflect your style and personality, creating a home you'll love.",
+      buttonLink: "/products", 
+      buttonText: "Start Your Journey",
     },
     {
       id: 3,
       imageUrl: "/images/slide3.jpg",
-      heading: "About Furnitt",
-      caption:
-        "A professional interior design firm dedicated to infusing creativity and artistic flair into your home, making it reflect your personality.",
-      buttonLink: "/about",
+      heading: "Interiors That Inspire",
+      caption: "Experience luxurious and functional interiors crafted to perfection, making every corner of your home truly special.",
+      buttonLink: "/services", 
+      buttonText: "View Our Work",
+    },
+    {
+      id: 4,
+      imageUrl: "/images/slide2.jpg", 
+      heading: "Let's Create Together",
+      caption: "Ready to transform your space? Get in touch with our team to start your design journey today.",
+      buttonLink: "/contact", 
+      buttonText: "Contact Us",
     },
   ];
-
+  
   const totalSlides = slides.length;
 
   useEffect(() => {
@@ -62,7 +70,7 @@ const StackableSlider = () => {
               <h2 className="text-2xl font-bold mb-4">{slide.heading}</h2>
               <p className="text-lg font-light mb-4">{slide.caption}</p>
               <Link href={slide.buttonLink} className="btn btn-primary text-lg">
-                Learn More
+                {slide.buttonText}
               </Link>
             </div>
           </div>
