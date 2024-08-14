@@ -25,9 +25,10 @@ export default function Home() {
       </div>
       <MarqueeComponent />
       <AboutUs />
+      <OurProducts />
       <ModularInteriors />
       <CardsContainer />
-      <OurProducts />
+   
       <LogoCarousel />
       <Faqs />
     </div>

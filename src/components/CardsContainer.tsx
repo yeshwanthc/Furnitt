@@ -58,8 +58,11 @@ const CardsContainer = () => {
   return (
     <div className=" py-[60px]">
       <div className="container-main flex flex-col md:flex-row justify-between">
+        <div>
         {isTextVisible && <AnimatedText text="Our Process" />}
-
+        <p className="text-lg bold">A Seamless Journey to Your Perfect Space</p>
+        </div>
+   
         <div className="md:w-1/2">
           <CardStack items={cards} />
         </div>

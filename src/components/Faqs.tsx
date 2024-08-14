@@ -20,7 +20,7 @@ export function Faqs() {
           />
         </div>
 
-        <Accordion type="single" collapsible className="md:w-1/2">
+        <Accordion type="single" collapsible className="w-full">
           <AccordionItem value="item-1">
             <AccordionTrigger>
               What makes Furnitt unique in its approach to interior design?
