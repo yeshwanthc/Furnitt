@@ -20,10 +20,10 @@ export default function LogoCarousel() {
     { src: Facebook, alt: "Facebook" },
     { src: Disney, alt: "Disney" },
     { src: Airbnb, alt: "Airbnb" },
+    { src: Facebook, alt: "Facebook" },
+    { src: Disney, alt: "Disney" },
+    { src: Airbnb, alt: "Airbnb" },
   ];
-
-  // Duplicate the logos array to create a seamless loop
-  const doubledLogos = [...logos, ...logos];
 
   return (
     <div className="py-[60px]">
@@ -31,14 +31,12 @@ export default function LogoCarousel() {
         <div className="py-[60px]">
           <AnimatedText text="Our Clients" />
         </div>
-        <div className="relative inline-flex flex-nowrap overflow-hidden">
-          <ul className="flex items-center justify-center md:justify-start [&_li]:mx-8 [&_img]:max-w-none animate-infinite-scroll">
-            {doubledLogos.map((logo, index) => (
-              <li key={index}>
-                <Image src={logo.src} alt={logo.alt} />
-              </li>
-            ))}
-          </ul>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
+          {logos.map((logo, index) => (
+            <div key={index} className="flex items-center justify-center border-1 p-4 border-solid border-black">
+              <Image src={logo.src} alt={logo.alt}  />
+            </div>
+          ))}
         </div>
       </div>
     </div>

@@ -12,6 +12,7 @@ import AnimatedText from "@/components/TextAnimate";
 
 import AboutUs from "./about/HomeAbout";
 import OurProducts from "./products/OurProducts";
+import Testimonials from "@/components/testimoniel";
 
 export default function Home() {
   return (
@@ -31,6 +32,7 @@ export default function Home() {
    
       <LogoCarousel />
       <Faqs />
+      <Testimonials />
     </div>
   );
 }
