@@ -8,11 +8,11 @@ import MarqueeComponent from "@/components/Marquee";
 import ModularInteriors from "@/components/ModularInteriors";
 import QuickLinks from "@/components/QuickLinks";
 import SliderComponent from "@/components/SliderComponent";
+import Testimonials from "@/components/testimoniel";
 import AnimatedText from "@/components/TextAnimate";
 
 import AboutUs from "./about/HomeAbout";
 import OurProducts from "./products/OurProducts";
-import Testimonials from "@/components/testimoniel";
 
 export default function Home() {
   return (
