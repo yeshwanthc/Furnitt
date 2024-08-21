@@ -58,7 +58,7 @@ const CardsContainer = () => {
   return (
     <div className=" py-[60px]">
       <div className="container-main flex flex-col md:flex-row justify-between">
-        <div className="w-1/2">
+        <div className="lg:w-1/2">
         {isTextVisible && <AnimatedText text="Our Process" />}
         <p className="text-lg bold">A Seamless Journey to Your Perfect Space</p>
         <p className="text-base">At Furnitt, we’ve refined our process to ensure your design experience is smooth, transparent, and enjoyable. From the initial consultation to the final handover, we guide you every step of the way. Our process begins with understanding your vision, followed by meticulous planning and design, and culminates in flawless execution. With a focus on quality and attention to detail, we bring your dream space to life, on time and within budget. Discover how easy it can be to create the home or office you’ve always wanted with our expert team by your side.</p>

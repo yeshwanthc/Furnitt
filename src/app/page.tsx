@@ -13,17 +13,21 @@ import AnimatedText from "@/components/TextAnimate";
 
 import AboutUs from "./about/HomeAbout";
 import OurProducts from "./products/OurProducts";
+import AboutFurnitt from "./about/bannerAbout";
+import ContactSection from "@/components/ContactHome";
+import WhyChooseFurnitt from "@/components/WhyChooseUs";
 
 export default function Home() {
   return (
     <div className="">
       <QuickLinks />
       <SliderComponent />
-      <div className="container-main">
+      {/* <div className="container-main">
         <div className="py-[60px] md:w-1/2">
           <AnimatedText text="We're the Manufacturers – straight from our factory to your home." />
         </div>
-      </div>
+      </div> */}
+      <AboutFurnitt />
       <MarqueeComponent />
       <AboutUs />
       <OurProducts />
@@ -31,8 +35,11 @@ export default function Home() {
       <CardsContainer />
    
       <LogoCarousel />
-      <Faqs />
+    
       <Testimonials />
+      <Faqs />
+      <WhyChooseFurnitt />
+      <ContactSection />
     </div>
   );
 }

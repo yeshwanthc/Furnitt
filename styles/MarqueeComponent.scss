@@ -1,16 +1,33 @@
 .marquee-container {
+  margin-top: 40px;
   overflow: hidden;
   white-space: nowrap;
   background-color: black;
   display: flex;
   align-items: center;
   height: 130px;
+
+  @media (max-width: 768px) {
+    height: 100px;
+  }
+
+  @media (max-width: 480px) {
+    height: 80px;
+  }
 }
 
 .marquee-wrapper {
   display: inline-block;
   white-space: nowrap;
   animation: marquee 10s linear infinite;
+
+  @media (max-width: 768px) {
+    animation-duration: 15s;
+  }
+
+  @media (max-width: 480px) {
+    animation-duration: 20s;
+  }
 }
 
 .marquee-content {
@@ -19,6 +36,18 @@
   font-size: 6rem;
   color: white;
   background-color: black;
+
+  @media (max-width: 1024px) {
+    font-size: 4rem;
+  }
+
+  @media (max-width: 768px) {
+    font-size: 3rem;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 2rem;
+  }
 }
 
 @keyframes marquee {

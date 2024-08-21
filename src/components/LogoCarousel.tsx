@@ -33,7 +33,7 @@ export default function LogoCarousel() {
         </div>
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8 justify-items-center">
           {logos.map((logo, index) => (
-            <div key={index} className="flex items-center justify-center border-1 p-4 border-solid border-black">
+            <div key={index} className="flex items-center justify-center">
               <Image src={logo.src} alt={logo.alt}  />
             </div>
           ))}
