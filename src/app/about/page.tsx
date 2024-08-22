@@ -1,5 +1,7 @@
-import Banner from "@/components/Banner";
 import React from "react";
+
+import Banner from "@/components/Banner";
+
 import "../../../styles/About.scss"
 
 const AboutPage = () => {
@@ -66,7 +68,7 @@ const AboutPage = () => {
         </h3>
         <p className="text-lg text-gray-700 leading-relaxed text-center">
           At Furnitt, we understand that your home is more than just a place to
-          live—it's a reflection of who you are. That's why we offer tailored
+          live—it&apos;s a reflection of who you are. That&apos;s why we offer tailored
           interior design solutions that meet your unique needs and preferences.
           Our commitment to quality, attention to detail, and customer
           satisfaction sets us apart from the rest.
@@ -81,25 +83,25 @@ const AboutPage = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             <div className="text-center">
               <p className="text-gray-700 mb-4">
-                "Furnitt transformed my apartment into a stylish and functional
+                Furnitt transformed my apartment into a stylish and functional
                 space. Their attention to detail and creativity were
-                outstanding."
+                outstanding.
               </p>
               <h4 className="text-xl font-semibold">Ananya Rao, Bangalore</h4>
             </div>
             <div className="text-center">
               <p className="text-gray-700 mb-4">
-                "The team at Furnitt did an incredible job with our office
+                The team at Furnitt did an incredible job with our office
                 redesign. The new layout and modern look have really boosted our
-                productivity."
+                productivity.
               </p>
               <h4 className="text-xl font-semibold">Ravi Kumar, Chennai</h4>
             </div>
             <div className="text-center">
               <p className="text-gray-700 mb-4">
-                "Furnitt exceeded my expectations with their design for my home.
+                Furnitt exceeded my expectations with their design for my home.
                 The quality of their work made the entire process smooth and
-                enjoyable."
+                enjoyable.
               </p>
               <h4 className="text-xl font-semibold">Priya Sen, Kolkata</h4>
             </div>

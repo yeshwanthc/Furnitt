@@ -1,16 +1,16 @@
 import React from "react";
-import Image from "next/image";
 import {
-  FaWhatsapp,
-  FaMapMarkerAlt,
-  FaEnvelope,
-  FaLinkedin,
-  FaInstagram,
-  FaFacebookF,
-  FaTwitter,
-  FaYoutube,
   FaBook,
+  FaEnvelope,
+  FaFacebookF,
+  FaInstagram,
+  FaLinkedin,
+  FaMapMarkerAlt,
+  FaTwitter,
+  FaWhatsapp,
+  FaYoutube,
 } from "react-icons/fa";
+import Image from "next/image";
 
 const ContactSection = () => {
   return (
