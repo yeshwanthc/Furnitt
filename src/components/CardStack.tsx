@@ -29,8 +29,8 @@ const CardStack: React.FC<CardStackProps> = ({ items }) => {
                 </h1>
                 <Image
                   src={item.svg}
-                  height={100}
-                  width={100}
+                  height={50}
+                  width={50}
                   alt={item.content}
                   className="object-contain"
                 />
