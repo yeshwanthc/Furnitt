@@ -3,6 +3,9 @@ import React from "react";
 import Banner from "@/components/Banner";
 
 import "../../../styles/About.scss"
+import ServicesFlip from "../services/ServicesFlip";
+import { InfiniteMovingCardsDemo } from "@/components/InCards";
+
 
 const AboutPage = () => {
   return (
@@ -14,53 +17,46 @@ const AboutPage = () => {
         heading="About Us"
       ></Banner>
 
-      <section className="container mx-auto py-12">
-        <h3 className="text-4xl font-bold mb-6">About Furnitt</h3>
-        <p className="text-lg text-gray-700 leading-relaxed">
-          Furnitt is a professional interior design firm dedicated to creating
-          artistic and personalized living spaces. Our designs are a perfect
-          blend of creativity, functionality, and luxury, ensuring that every
-          space we craft is not only beautiful but also practical. With a team
-          of experienced designers, we transform ordinary spaces into
-          extraordinary experiences.
-        </p>
-
-        <div className="flex gap-[40px]">
-          {" "}
-          <button>
-            <span> View Portfolio</span>
-          </button>
-          <button>
-            <span> Our Services</span>
-          </button>
+<section className="container mx-auto py-12 flex items-center">
+        <div className="relative w-1/2">
+          <img
+            src="images/1.png"
+            alt="About Furnitt"
+            className="w-full object-cover"
+          />
+          <div className="absolute top-0 left-0 w-full h-full border border-white"></div>
         </div>
-      </section>
 
-      <section className="bg-gray-100 py-12">
-        <div className="container mx-auto">
-          <h3 className="text-4xl font-bold mb-6 text-center">Our Services</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <h4 className="text-2xl font-semibold">Residential Design</h4>
-              <p className="text-gray-700">
-                Transforming homes into personalized sanctuaries.
-              </p>
-            </div>
-            <div className="text-center">
-              <h4 className="text-2xl font-semibold">Commercial Design</h4>
-              <p className="text-gray-700">
-                Creating functional and aesthetically pleasing workspaces.
-              </p>
-            </div>
-            <div className="text-center">
-              <h4 className="text-2xl font-semibold">Renovation Services</h4>
-              <p className="text-gray-700">
-                Breathing new life into existing spaces.
-              </p>
-            </div>
+        <div className="w-1/2 pl-12">
+          <h3 className="text-4xl font-bold mb-6">Modern Interior Solutions</h3>
+          <p className="text-lg text-gray-700 leading-relaxed mb-8">
+            Furnitt is a professional interior design firm dedicated to creating
+            artistic and personalized living spaces. Our designs are a perfect
+            blend of creativity, functionality, and luxury, ensuring that every
+            space we craft is not only beautiful but also practical. With a team
+            of experienced designers, we transform ordinary spaces into
+            extraordinary experiences.
+          </p>
+
+          <div className="flex gap-4">
+            <button className="py-2 px-4 rounded-md">
+              View Portfolio
+            </button>
+            <button className="text-black py-2 px-4 rounded-md">
+              Book Design Consultancy
+            </button>
           </div>
         </div>
       </section>
+
+      {/* <section className="bg-gray-100 py-12">
+        <div className="container mx-auto">
+          <h3 className="text-4xl font-bold mb-6 text-center">Our Services</h3>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+           <ServicesFlip />
+          </div>
+        </div>
+      </section> */}
 
       <section className="container mx-auto py-12">
         <h3 className="text-4xl font-bold mb-6 text-center">
@@ -107,6 +103,7 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
+        <InfiniteMovingCardsDemo />
       </section>
 
       <section className="bg-black text-white py-12">
@@ -125,6 +122,7 @@ const AboutPage = () => {
           </a>
         </div>
       </section>
+   
     </div>
   );
 };
