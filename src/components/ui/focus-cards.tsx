@@ -1,6 +1,7 @@
 "use client";
-import Image from "next/image";
 import React, { useState } from "react";
+import Image from "next/image";
+
 import { cn } from "@/lib/utils";
 
 export const Card = React.memo(
@@ -45,12 +46,9 @@ export const Card = React.memo(
 
 Card.displayName = "Card";
 
-type Card = {
-  title: string;
-  src: string;
-};
 
-export function FocusCards({ cards }: { cards: Card[] }) {
+
+export function FocusCards({ cards }: { cards }) {
   const [hovered, setHovered] = useState<number | null>(null);
 
   return (

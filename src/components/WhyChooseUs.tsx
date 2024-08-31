@@ -39,7 +39,7 @@ const WhyChooseFurnitt = () => {
           {benefits.map((benefit, index) => (
             <div
               key={index}
-              className="p-6 bg-white shadow-lg rounded-lg text-center"
+              className="why-choose-us-child"
             >
               <div className="text-6xl mb-4 text-yellow-500">{benefit.icon}</div>
               <h3 className="text-xl font-bold mb-2">{benefit.title}</h3>

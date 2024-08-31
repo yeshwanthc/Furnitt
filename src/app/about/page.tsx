@@ -1,10 +1,9 @@
 import React from "react";
 
 import Banner from "@/components/Banner";
+import { InfiniteMovingCardsDemo } from "@/components/InCards";
 
 import "../../../styles/About.scss"
-import ServicesFlip from "../services/ServicesFlip";
-import { InfiniteMovingCardsDemo } from "@/components/InCards";
 
 
 const AboutPage = () => {
@@ -49,14 +48,7 @@ const AboutPage = () => {
         </div>
       </section>
 
-      {/* <section className="bg-gray-100 py-12">
-        <div className="container mx-auto">
-          <h3 className="text-4xl font-bold mb-6 text-center">Our Services</h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-           <ServicesFlip />
-          </div>
-        </div>
-      </section> */}
+ 
 
       <section className="container mx-auto py-12">
         <h3 className="text-4xl font-bold mb-6 text-center">
@@ -71,39 +63,16 @@ const AboutPage = () => {
         </p>
       </section>
 
-      <section className="bg-gray-100 py-12">
+      <section className="py-12">
         <div className="container mx-auto">
-          <h3 className="text-4xl font-bold mb-6 text-center">
+          <h3 className="text-4xl font-bold text-center">
             What Our Clients Say
           </h3>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <div className="text-center">
-              <p className="text-gray-700 mb-4">
-                Furnitt transformed my apartment into a stylish and functional
-                space. Their attention to detail and creativity were
-                outstanding.
-              </p>
-              <h4 className="text-xl font-semibold">Ananya Rao, Bangalore</h4>
-            </div>
-            <div className="text-center">
-              <p className="text-gray-700 mb-4">
-                The team at Furnitt did an incredible job with our office
-                redesign. The new layout and modern look have really boosted our
-                productivity.
-              </p>
-              <h4 className="text-xl font-semibold">Ravi Kumar, Chennai</h4>
-            </div>
-            <div className="text-center">
-              <p className="text-gray-700 mb-4">
-                Furnitt exceeded my expectations with their design for my home.
-                The quality of their work made the entire process smooth and
-                enjoyable.
-              </p>
-              <h4 className="text-xl font-semibold">Priya Sen, Kolkata</h4>
-            </div>
-          </div>
+    
+          <InfiniteMovingCardsDemo />
+      
         </div>
-        <InfiniteMovingCardsDemo />
+    
       </section>
 
       <section className="bg-black text-white py-12">

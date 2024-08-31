@@ -51,7 +51,16 @@ const Footer = () => {
     },
   ];
 
-  const links = ["About Us", "Our Services", "Products", "Contact Us"];
+  const links = [
+    {
+      name: "About Us",
+      link: "/about",
+    },
+
+    { name: "Our Services", link: "/services" },
+    { name: "Products", link: "/products" },
+    { name: "Contact Us", link: "/contact" },
+  ];
 
   const mapSrc =
     "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.091204827814!2d144.95373631531898!3d-37.81627997975171!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5771e214e66eab5!2sEnvato!5e0!3m2!1sen!2sus!4v1593993640656!5m2!1sen!2sus";
@@ -65,8 +74,11 @@ const Footer = () => {
               <img src="/images/logo-black.png" alt="Logo" className="h-10" />
             </div>
             <p className="text-base">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut
-              volutpat rutrum eros sit amet sollicitudin.
+              Furnitt is a professional interior design firm dedicated to
+              creating artistic and personalized living spaces. Our designs are
+              a perfect blend of creativity, functionality, and luxury, ensuring
+              that every space we craft is not only beautiful but also
+              practical.
             </p>
             <div className="flex space-x-4">
               {socialLinks.map((link, index) => (
@@ -82,8 +94,8 @@ const Footer = () => {
             <ul className="flex flex-col md:flex-row gap-4">
               {links.map((link, index) => (
                 <li key={index}>
-                  <a href="/" className="hover:underline">
-                    {link}
+                  <a href={link.link} className="hover:underline">
+                    {link.name}
                   </a>
                 </li>
               ))}

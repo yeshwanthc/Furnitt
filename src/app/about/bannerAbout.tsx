@@ -2,7 +2,8 @@ import Link from "next/link";
 
 const AboutFurnitt = () => {
   return (
-    <div className="flex container-main flex-col items-center justify-center py-[60px]">
+    <div className="container-main ">
+    <div className="flex flex-col items-center justify-center py-[60px]">
       <h1 className="text-3xl font-bold mb-4 text-center">About Furnitt</h1>
       <h2 className="text-xl mb-2 text-center">
         From Our Factory Directly to Your Home – Crafted by Us, for You.
@@ -20,6 +21,7 @@ const AboutFurnitt = () => {
           Read More
         </Link>
       </div>
+    </div>
     </div>
   );
 };

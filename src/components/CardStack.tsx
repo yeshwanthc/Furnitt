@@ -22,9 +22,9 @@ const CardStack: React.FC<CardStackProps> = ({ items }) => {
             style={{ top: `${150 + index * 10}px` }}
             className="sticky"
           >
-            <div className="md:p-[40px] border-gray rounded-[20px] border-1 bg-white">
+            <div className="p-[20px] md:p-[40px] border-gray rounded-[20px] border-1 bg-white">
               <div className="flex items-center justify-between gap-4 mb-2">
-              <h1 className="text-lg md:text-3xl font-semibold">
+              <h1 className="text-md md:text-3xl font-semibold">
                   {item.content}
                 </h1>
                 <Image

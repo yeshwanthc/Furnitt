@@ -2,7 +2,7 @@
 import React from "react";
 
 import CardsContainer from "@/components/CardsContainer";
-import ContactSection from "@/components/ContactHome";
+import ContactSection from "@/components/ContactSection";
 import { Faqs } from "@/components/Faqs";
 import LogoCarousel from "@/components/LogoCarousel";
 import MarqueeComponent from "@/components/Marquee";

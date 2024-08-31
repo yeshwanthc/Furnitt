@@ -117,3 +117,15 @@ $mobileScreen: 648px;
 .clients .relative ul li {
   width: calc(100% / 18); // Adjust the divisor based on the number of logos times two
 }
+
+.why-choose-us-child{
+  position: relative;
+  padding: 40px 15px 40px;
+  width: 100%;
+  text-align: center;
+  background: #fff;
+  border: 1px solid #e5e9f2;
+  -webkit-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}

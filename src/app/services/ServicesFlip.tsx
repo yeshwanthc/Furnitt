@@ -18,7 +18,7 @@ const ServicesFlip = () => {
             <h4 className="text-lg mt-2">Guiding Our Path Forward</h4>
             <p className="text-sm mt-4">
               To deliver exceptional interior design services by understanding
-              our clients' needs, providing personalized solutions, and ensuring
+              our clients needs, providing personalized solutions, and ensuring
               every project is executed with precision, on time, and within
               budget.
             </p>
@@ -64,7 +64,7 @@ const ServicesFlip = () => {
             <p className="text-sm mt-4">
               Founded in 2017, Furnitt started as a small team of passionate
               designers with a vision to revolutionize the interior design
-              industry. Over the years, we've grown into a leading firm, renowned
+              industry. Over the years, we&apos;ve grown into a leading firm, renowned
               for our innovative approach and impeccable craftsmanship. Our journey
               is marked by continuous learning, adaptation, and a relentless pursuit
               of excellence.
