@@ -3,8 +3,9 @@ import React from "react";
 import Banner from "@/components/Banner";
 import { InfiniteMovingCardsDemo } from "@/components/InCards";
 
-import "../../../styles/About.scss"
+import TeamSection from "./Team";
 
+import "../../../styles/About.scss";
 
 const AboutPage = () => {
   return (
@@ -16,7 +17,7 @@ const AboutPage = () => {
         heading="About Us"
       ></Banner>
 
-<section className="container mx-auto py-12 flex items-center">
+      <section className="container-main mx-auto py-12 flex items-center">
         <div className="relative w-1/2">
           <img
             src="images/1.png"
@@ -38,41 +39,85 @@ const AboutPage = () => {
           </p>
 
           <div className="flex gap-4">
-            <button className="py-2 px-4 rounded-md">
-              View Portfolio
-            </button>
-            <button className="text-black py-2 px-4 rounded-md">
-              Book Design Consultancy
-            </button>
+            <button className="button_one">View Portfolio</button>
+            <button className="button_one">Book Design Consultancy</button>
           </div>
         </div>
       </section>
 
- 
+      <div className="about-section container-main py-[60px]">
+        <div className="content-block">
+        <div className="ot-heading flex justify-center flex-col items-center">
+					<span> OUR PRINCIPLES </span>
+          <p>History | Vission | Mission</p>
+	
+				</div>
+        </div>
 
-      <section className="container mx-auto py-12">
+        <div className="images-block">
+          <div className="image-container">
+            <img src="/images/1.png" alt="Furnitt History Image 1" />
+            <div className="overlay">
+              <h2>Our History</h2>
+              <h4>A Legacy of Excellence</h4>
+              <p>
+                Founded in 2017, Furnitt started as a small team of passionate
+                designers with a vision to revolutionize the interior design
+                industry. Over the years, we&apos;ve grown into a leading firm,
+                renowned for our innovative approach and impeccable
+                craftsmanship. From humble beginnings, we have expanded our
+                portfolio to include a wide range of residential and commercial
+                projects across India. Our journey is marked by continuous
+                learning, adaptation, and a relentless pursuit of excellence.
+              </p>
+            </div>
+          </div>
+          <div className="image-container">
+            <img src="/images/2.png" alt="Furnitt History Image 2" />
+            <div className="overlay">
+              <h2>Our Vision</h2>
+              To be the leading interior design firm, known for transforming
+              spaces with creativity, quality, and innovation, creating
+              environments that enhance the lives of our clients.
+            </div>
+          </div>
+          <div className="image-container">
+            <img src="/images/3.png" alt="Furnitt History Image 3" />
+            <div className="overlay">
+              <h2>Our Mission</h2>
+
+              <p>
+                To deliver exceptional interior design services by understanding
+                our clients needs, providing personalized solutions, and
+                ensuring every project is executed with precision, on time, and
+                within budget.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* <section className="container mx-auto py-12">
         <h3 className="text-4xl font-bold mb-6 text-center">
           Why Choose Furnitt
         </h3>
         <p className="text-lg text-gray-700 leading-relaxed text-center">
           At Furnitt, we understand that your home is more than just a place to
-          live—it&apos;s a reflection of who you are. That&apos;s why we offer tailored
-          interior design solutions that meet your unique needs and preferences.
-          Our commitment to quality, attention to detail, and customer
-          satisfaction sets us apart from the rest.
+          live—it&apos;s a reflection of who you are. That&apos;s why we offer
+          tailored interior design solutions that meet your unique needs and
+          preferences. Our commitment to quality, attention to detail, and
+          customer satisfaction sets us apart from the rest.
         </p>
-      </section>
-
+      </section> */}
+<TeamSection />
       <section className="py-12">
         <div className="container mx-auto">
           <h3 className="text-4xl font-bold text-center">
             What Our Clients Say
           </h3>
-    
+
           <InfiniteMovingCardsDemo />
-      
         </div>
-    
       </section>
 
       <section className="bg-black text-white py-12">
@@ -91,7 +136,6 @@ const AboutPage = () => {
           </a>
         </div>
       </section>
-   
     </div>
   );
 };
