@@ -17,33 +17,34 @@ const AboutPage = () => {
         heading="About Us"
       ></Banner>
 
-      <section className="container-main mx-auto py-12 flex items-center">
-        <div className="relative w-1/2">
-          <img
-            src="images/1.png"
-            alt="About Furnitt"
-            className="w-full object-cover"
-          />
-          <div className="absolute top-0 left-0 w-full h-full border border-white"></div>
-        </div>
+<section className="container-main sm:mt-6 mx-auto py-12 flex flex-col-reverse md:flex-row items-center">
+  <div className="relative w-full md:w-1/2 mt-8 md:mt-0">
+    <img
+      src="images/1.png"
+      alt="About Furnitt"
+      className="w-full object-cover"
+    />
+    <div className="absolute top-0 left-0 w-full h-full border border-white"></div>
+  </div>
 
-        <div className="w-1/2 pl-12">
-          <h3 className="text-4xl font-bold mb-6">Modern Interior Solutions</h3>
-          <p className="text-lg text-gray-700 leading-relaxed mb-8">
-            Furnitt is a professional interior design firm dedicated to creating
-            artistic and personalized living spaces. Our designs are a perfect
-            blend of creativity, functionality, and luxury, ensuring that every
-            space we craft is not only beautiful but also practical. With a team
-            of experienced designers, we transform ordinary spaces into
-            extraordinary experiences.
-          </p>
+  <div className="w-full md:w-1/2 md:pl-12">
+    <h3 className="text-2xl md:text-4xl font-bold mb-6 text-center md:text-left">Modern Interior Solutions</h3>
+    <p className="text-base md:text-lg text-gray-700 leading-relaxed mb-8 text-center md:text-left">
+      Furnitt is a professional interior design firm dedicated to creating
+      artistic and personalized living spaces. Our designs are a perfect
+      blend of creativity, functionality, and luxury, ensuring that every
+      space we craft is not only beautiful but also practical. With a team
+      of experienced designers, we transform ordinary spaces into
+      extraordinary experiences.
+    </p>
 
-          <div className="flex gap-4">
-            <button className="button_one">View Portfolio</button>
-            <button className="button_one">Book Design Consultancy</button>
-          </div>
-        </div>
-      </section>
+    <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
+      <button className="button_one">View Portfolio</button>
+      <button className="button_one">Book Design Consultancy</button>
+    </div>
+  </div>
+</section>
+
 
       <div className="about-section container-main py-[60px]">
         <div className="content-block">
