@@ -15,7 +15,8 @@ const appliances: Appliance[] = [
 ];
 
 const ModularInteriors: React.FC = () => {
-  const [hoveredAppliance, setHoveredAppliance] = useState<Appliance | null>(null);
+  // Set the first appliance as the default hovered appliance
+  const [hoveredAppliance, setHoveredAppliance] = useState<Appliance>(appliances[0]);
 
   return (
     <div className="container-main py-8 md:py-[100px] min-h-[80vh] md:h-[100vh] bg-white text-black">
@@ -34,7 +35,7 @@ const ModularInteriors: React.FC = () => {
                 key={index}
                 className="text-lg md:text-2xl lg:text-4xl font-bold cursor-pointer text-gray-400 hover:text-black transition duration-300 ease-in-out flex items-center"
                 onMouseEnter={() => setHoveredAppliance(appliance)}
-                onMouseLeave={() => setHoveredAppliance(null)}
+                onMouseLeave={() => setHoveredAppliance(appliances[0])} // Reset to default on mouse leave
               >
                 {appliance.name}
               </li>
