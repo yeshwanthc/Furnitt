@@ -45,7 +45,7 @@ export default function Testimonials() {
                   height={100}
                 />
               </div>
-              <p className="text-gray-700 italic mb-4">&quot{testimonial.text}&quot</p>
+              <p className="text-gray-700 italic mb-4">&quot;{testimonial.text}&quot;</p>
               <h4 className="font-semibold text-green-700 text-lg">{testimonial.name}</h4>
               <p className="text-gray-500">{testimonial.designation}</p>
             </div>
