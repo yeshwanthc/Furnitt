@@ -29,7 +29,19 @@ const languages = [
 
 export default function MultistepCostCalculator() {
   const [step, setStep] = useState(1)
-  const [formData, setFormData] = useState({
+  const [formData, setFormData] = useState<{
+    rooms: string,
+    budget: string,
+    items: string[],
+    timeline: string,
+    language: string,
+    fullName: string,
+    address: string,
+    city: string,
+    pincode: string,
+    mobile: string,
+    email: string
+  }>({
     rooms: "",
     budget: "",
     items: [],
@@ -42,6 +54,7 @@ export default function MultistepCostCalculator() {
     mobile: "",
     email: ""
   })
+  
 
   const updateFormData = (field: string, value: string | string[]) => {
     setFormData(prev => ({ ...prev, [field]: value }))
