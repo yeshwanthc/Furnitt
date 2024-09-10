@@ -73,7 +73,7 @@ const CardsContainer = () => {
       <div className="container-main flex flex-col md:flex-row justify-between">
         {/* Sticky text container */}
         <div
-          className={`lg:w-1/2 ${isSticky ? "sticky top-[160px]" : ""} h-fit`}
+          className={`lg:w-1/2 ${isSticky ? "md:sticky md:top-[160px]" : ""} h-fit`}
         >
           {isTextVisible && <AnimatedText text="Our Process" />}
           <p className="text-lg bold">
