@@ -97,24 +97,7 @@ export default function OwnAFranchise() {
           </Button>
         </div>
 
-        <div className="mt-16 bg-gray-100 rounded-lg p-8">
-          <h2 className="text-2xl font-bold mb-4">
-            Why Choose Cabinet Factory?
-          </h2>
-          <p className="text-gray-700 mb-4">
-            As a ply manufacturer, we offer unmatched value and quality. Our
-            state-of-the-art manufacturing process ensures precision,
-            durability, and consistency in every product. By joining our
-            franchise network, you&apos;ll benefit from our established brand,
-            cutting-edge technology, and comprehensive support system.
-          </p>
-          <p className="text-gray-700">
-            Our commitment to innovation, quality, and customer satisfaction
-            sets us apart in the market. With Cabinet Factory, you&apos;re not just
-            owning a franchise; you&apos;re partnering with a leader in the kitchen
-            solutions industry.
-          </p>
-        </div>
+      
       </div>
     </div>
   );
