@@ -68,8 +68,8 @@
 $mobileScreen: 648px;
 
 @font-face {
-  font-family: "Rajdhani";
-  src: url(../public/fonts/Rajdhani-Regular.ttf);
+  font-family: "Poppins";
+  src: url(../public/fonts/Poppins-Regular.ttf);
 }
 @font-face {
   font-family: "JosefinSans";
@@ -88,7 +88,7 @@ html {
   scroll-behavior: smooth;
 }
 body {
-  font-family: "JosefinSans";
+  font-family: "Poppins";
 }
 
 h1,
@@ -97,7 +97,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Rajdhani";
+  font-family: "Poppins";
 }
 
 .container-main {

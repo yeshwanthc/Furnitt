@@ -28,7 +28,8 @@ const menuItems: MenuItem[] = [
   { label: "Home", link: "/" },
   { label: "About Us", link: "/about" },
   { label: "Services", link: "/services" },
-  { label: "Products", link: "/products" },
+  { label: "Cost Calculator", link: "/cost-calculator" },
+  { label: "Own A Franchise", link: "/own-a-franchise" },
   { label: "Gallery", link: "/gallery" },
   { label: "Contact Us", link: "/contact" },
 ];
