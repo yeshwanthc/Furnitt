@@ -3,7 +3,7 @@ import React from "react";
 import Banner from "@/components/Banner";
 
 const contactDetails = [
-  { title: "Email", value: "contact@example.com" },
+  { title: "Email", value: "reachus@furnitt.in" },
   { title: "Phone", value: "+1 234 567 890" },
   { title: "Location", value: "Bangalore" },
 ];

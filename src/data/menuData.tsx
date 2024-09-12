@@ -8,7 +8,7 @@ const phoneIconSvg = `
 `;
 
 const navItems: NavItem[] = [
-  { label: "OWN THE FRANCHISE", link: "/" },
+  { label: "OWN THE FRANCHISE", link: "/own-a-franchise" },
   {
     label: "Enquiries at +91 9999999999",
     iconSVG: phoneIconSvg,
@@ -29,7 +29,6 @@ const menuItems: MenuItem[] = [
   { label: "About Us", link: "/about" },
   { label: "Services", link: "/services" },
   { label: "Cost Calculator", link: "/cost-calculator" },
-  { label: "Own A Franchise", link: "/own-a-franchise" },
   { label: "Gallery", link: "/gallery" },
   { label: "Contact Us", link: "/contact" },
 ];
