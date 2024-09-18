@@ -7,7 +7,6 @@ import { Faqs } from "@/components/Faqs";
 import LogoCarousel from "@/components/LogoCarousel";
 import MarqueeComponent from "@/components/Marquee";
 import ModularInteriors from "@/components/ModularInteriors";
-// import QuickLinks from "@/components/QuickLinks";
 import SliderComponent from "@/components/SliderComponent";
 import Testimonials from "@/components/testimoniel";
 import WhyChooseFurnitt from "@/components/WhyChooseUs";
@@ -19,7 +18,6 @@ import OurProducts from "./products/OurProducts";
 export default function Home() {
   return (
     <div className="">
-      {/* <QuickLinks /> */}
       <SliderComponent />
  
       <AboutFurnitt />
