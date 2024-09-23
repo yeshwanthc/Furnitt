@@ -3,18 +3,18 @@
 'use client'
 
 import React, { useState } from 'react'
+
+import emailjs from '@emailjs/browser'
+
+import { Alert, AlertDescription } from "@/components/ui/alert"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
+import { Select, SelectContent, SelectItem,SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
-import { Select, SelectTrigger, SelectValue, SelectContent, SelectItem } from "@/components/ui/select"
-import { Alert, AlertDescription } from "@/components/ui/alert"
-import emailjs from '@emailjs/browser'
 
 
-interface ContactFormProps {
-    contactTest: boolean;
-  }
+
 
 export default function ContactForm({ contactTest }) {
   const [formData, setFormData] = useState({

@@ -6,22 +6,9 @@ const nextConfig = {
   sassOptions: {
     includePaths: [path.join(__dirname, "styles")],
   },
-  output: 'export',
+  output: 'export',  
   images: {
     unoptimized: true, 
-  },
-  exportPathMap: async function (
-    defaultPathMap,
-    { dev, dir, outDir, distDir, buildId }
-  ) {
-    return {
-      '/': { page: '/' }, 
-      '/about': { page: '/about' }, 
-      '/services': { page: '/services' }, 
-      '/cost-calculator': { page: '/cost-calculator' }, 
-      '/gallery': { page: '/gallery' }, 
-      '/contact': { page: '/contact' }, 
-    };
   },
 };
 

@@ -1,5 +1,6 @@
-import ContactForm from '@/app/contact/ContactForm';
 import React from 'react';
+
+import ContactForm from '@/app/contact/ContactForm';
 
 const ContactSection = () => {
   const contactTest = false
