@@ -4,7 +4,7 @@ import Banner from "@/components/Banner";
 
 const contactDetails = [
   { title: "Email", value: "reachus@furnitt.in" },
-  { title: "Phone", value: "+1 234 567 890" },
+  { title: "Phone", value: "+91 8884377000" },
   { title: "Location", value: "Bangalore" },
 ];
 

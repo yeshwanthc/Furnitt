@@ -10,11 +10,11 @@ const phoneIconSvg = `
 const navItems: NavItem[] = [
   { label: "OWN THE FRANCHISE", link: "/own-a-franchise" },
   {
-    label: "Enquiries at +91 9999999999",
+    label: "Enquiries at +91 8884377000",
     iconSVG: phoneIconSvg,
   },
   {
-    label: "After Sales Service enquiries at +91 9999999999",
+    label: "After Sales Service enquiries at +91 8884377000",
     iconSVG: phoneIconSvg,
   },
 ];
