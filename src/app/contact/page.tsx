@@ -1,11 +1,14 @@
 import React from "react";
-
 import Banner from "@/components/Banner";
+import ContactForm from "./ContactForm";
 
 const contactDetails = [
   { title: "Email", value: "reachus@furnitt.in" },
-  { title: "Phone", value: "+91 8884377000" },
-  { title: "Location", value: "Bangalore" },
+  { title: "Phone / Landline", value: "+91 8884377000 / 080 987654321" },
+  { 
+    title: "Address", 
+    value: "Shed No. 04 & 05, 1st Cross Hosahalli Gollarapalya Village, Magadi Main Rd, Bengaluru, Karnataka 560091" 
+  },
 ];
 
 const socialLinks = [
@@ -31,7 +34,8 @@ const socialLinks = [
   },
 ];
 
-const ContactPage = () => {
+export default function ContactPage() {
+  const contactTest = true
   return (
     <>
       <Banner
@@ -39,56 +43,23 @@ const ContactPage = () => {
         overlayColor="gray"
         overlayOpacity={0.5}
         heading="Contact Us"
-      ></Banner>
+      />
 
       <div className="container-main m-t-80 px-4 py-8">
-        <div className="shadow-lg px-8 py-8 mb-8  bg-white ">
+        <div className="shadow-lg px-8 py-8 mb-8 bg-white">
           <h2 className="text-3xl font-bold mb-6">Contact Information</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
             {contactDetails.map((detail, index) => (
-              <div key={index} className="rounded-lg p-6 border-gray-100 border-2 bg-slate-50">
+              <div
+                key={index}
+                className="rounded-lg p-6 border-gray-100 border-2 bg-slate-50"
+              >
                 <h3 className="text-xl font-semibold mb-4">{detail.title}</h3>
                 <p className="text-lg">{detail.value}</p>
               </div>
             ))}
           </div>
-          <div className="">
-            <h2 className="text-3xl font-bold mb-6">Contact Us</h2>
-            <form className="rounded-lg p-8 grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
-              <div className="flex flex-col">
-                <label className="mb-2 font-semibold">Name</label>
-                <input
-                  type="text"
-                  className="p-3 border rounded-lg"
-                  placeholder="Your Name"
-                />
-              </div>
-              <div className="flex flex-col">
-                <label className="mb-2 font-semibold">Email</label>
-                <input
-                  type="email"
-                  className="p-3 border rounded-lg"
-                  placeholder="Your Email"
-                />
-              </div>
-              <div className="flex flex-col md:col-span-2">
-                <label className="mb-2 font-semibold">Message</label>
-                <textarea
-                  className="p-3 border rounded-lg"
-                  rows={5}
-                  placeholder="Your Message"
-                ></textarea>
-              </div>
-              <div className="md:col-span-2 flex justify-center">
-                <button
-                  type="submit"
-                  className="px-6 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-blue-700"
-                >
-                  Send Message
-                </button>
-              </div>
-            </form>
-          </div>
+          <ContactForm contactTest={contactTest} />
 
           <h2 className="text-3xl font-bold mb-6">Follow Us</h2>
           <div className="flex justify-center space-x-6">
@@ -98,8 +69,10 @@ const ContactPage = () => {
                 href={link.href}
                 target="_blank"
                 rel="noopener noreferrer"
+                className="text-gray-600 hover:text-gray-800 transition-colors duration-300"
               >
                 <span dangerouslySetInnerHTML={{ __html: link.svg }} />
+                <span className="sr-only">{link.alt}</span>
               </a>
             ))}
           </div>
@@ -108,14 +81,15 @@ const ContactPage = () => {
 
       <div className="mt-8">
         <iframe
-          className="rounded-lg w-full h-64"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3878.131874777432!2d77.59456271418927!3d12.971598590877871!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDI5JzMwLjMiTiA3N8KwNTAnMDcuMCJF!5e0!3m2!1sen!2sin!4v1625731327053!5m2!1sen!2sin"
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.639304275931!2d77.4768641!3d12.9949067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3dec1a4dd35f%3A0xc37645f0ffcb4cf6!2sViswa%20Panelcrafts%3A%20Modular%20Furniture%20Factory!5e0!3m2!1sen!2sin!4v1727077399250!5m2!1sen!2sin"
+          className="w-full h-64"
+          style={{ border: 0 }}
           allowFullScreen
           loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="Google Maps"
         ></iframe>
       </div>
     </>
   );
-};
-
-export default ContactPage;
+}

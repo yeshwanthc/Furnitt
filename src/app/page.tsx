@@ -19,16 +19,13 @@ export default function Home() {
   return (
     <div className="">
       <SliderComponent />
- 
       <AboutFurnitt />
       <MarqueeComponent />
       <AboutUs />
       <OurProducts />
       <ModularInteriors />
       <CardsContainer />
-   
       <LogoCarousel />
-    
       <Testimonials />
       <Faqs />
       <WhyChooseFurnitt />
