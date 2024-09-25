@@ -20,7 +20,7 @@ const AboutPage = () => {
 <section className="container-main sm:mt-6 mx-auto py-12 flex flex-col-reverse md:flex-row items-center">
   <div className="relative w-full md:w-1/2 mt-8 md:mt-0">
     <img
-      src="images/1.png"
+      src="/images/1.png"
       alt="About Furnitt"
       className="w-full object-cover"
     />
