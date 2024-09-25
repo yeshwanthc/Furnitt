@@ -66,7 +66,7 @@ const ProductsPage = () => {
   return (
     <div className="overflow-hidden">
       <Banner
-        backgroundImage="images/banner.jpg"
+        backgroundImage="/images/banner.jpg"
         overlayColor="gray"
         overlayOpacity={0.5}
         heading="Our Products"

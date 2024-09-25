@@ -1,97 +1,108 @@
 import React from "react";
-
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Facebook,
+  Twitter,
+  Linkedin,
+  Instagram,
+} from "lucide-react";
+import ContactForm from "./ContactForm";
 import Banner from "@/components/Banner";
 
-import ContactForm from "./ContactForm";
-
 const contactDetails = [
-  { title: "Email", value: "reachus@furnitt.in" },
-  { title: "Phone / Landline", value: "+91 8884377000 / 080 987654321" },
-  { 
-    title: "Address", 
-    value: "Shed No. 04 & 05, 1st Cross Hosahalli Gollarapalya Village, Magadi Main Rd, Bengaluru, Karnataka 560091" 
+  { title: "Email", value: "reachus@furnitt.in", icon: Mail },
+  {
+    title: "Phone / Landline",
+    value: "+91 8884377000 / 080 987654321",
+    icon: Phone,
+  },
+  {
+    title: "Address",
+    value:
+      "Shed No. 04 & 05, 1st Cross Hosahalli Gollarapalya Village, Magadi Main Rd, Bengaluru, Karnataka 560091",
+    icon: MapPin,
   },
 ];
 
 const socialLinks = [
-  {
-    href: "https://www.facebook.com",
-    svg: `<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 320 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M279.14 288l14.22-92.66h-88.91v-60.13c0-25.35 12.42-50.06 52.24-50.06h40.42V6.26S260.43 0 225.36 0c-73.22 0-121.08 44.38-121.08 124.72v70.62H22.89V288h81.39v224h100.17V288z"></path></svg>`,
-    alt: "Facebook",
-  },
-  {
-    href: "https://www.twitter.com",
-    svg: `<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 512 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M459.37 151.716h.325c.233 3.289.233 6.578.233 9.876 0 100.71-76.701 216.55-216.548 216.55-43.037 0-83.116-12.573-116.462-34.114 6.078.708 12.155 1.097 18.41 1.097 35.706 0 68.498-12.155 94.596-32.53-33.464-.707-61.527-22.614-71.184-52.78 4.668.707 9.345 1.304 14.197 1.304 6.78 0 13.56-.929 19.886-2.572-34.995-7.03-61.313-37.815-61.313-74.91v-.707c10.132 5.625 21.884 9.094 34.293 9.478-20.282-13.584-33.464-36.729-33.464-62.934 0-13.949 3.724-26.95 10.304-38.105 37.24 45.66 92.74 75.548 155.274 78.689-1.178-5.625-1.78-11.562-1.78-17.499 0-42.464 34.527-76.991 77.01-76.991 22.155 0 42.134 9.345 56.242 24.45 17.499-3.41 34.004-9.878 48.748-18.624-5.625 17.812-17.498 32.574-33.002 42.036 15.542-1.877 30.355-5.97 44.151-11.784-10.435 15.355-23.599 28.978-38.547 39.952z"></path></svg>`,
-    alt: "Twitter",
-  },
-  {
-    href: "https://www.linkedin.com",
-    svg: `<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M100.28 448H7.4V148.9h92.88zm-46.14-329.17a53.31 53.31 0 1 1 53.32-53.31 53.24 53.24 0 0 1-53.32 53.31zm384.6 329.17h-92.68V302.4c0-34.74-1.25-79.41-48.39-79.41-48.39 0-55.76 37.8-55.76 76.87v148.16H151.51V148.9h89V191h1.28c12.42-23.51 42.63-48.39 87.74-48.39 93.82 0 111.14 61.75 111.14 141.99z"></path></svg>`,
-    alt: "LinkedIn",
-  },
-  {
-    href: "https://www.instagram.com",
-    svg: `<svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 448 512" height="1em" width="1em" xmlns="http://www.w3.org/2000/svg"><path d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9S160.5 370.8 224.1 370.8 339 319.5 339 255.9 287.7 141 224.1 141zm0 188.1c-40.4 0-73.2-32.8-73.2-73.2s32.8-73.2 73.2-73.2 73.2 32.8 73.2 73.2-32.8 73.2-73.2 73.2zm146.4-194.3c0 14.9-12.1 27-27 27-14.9 0-27-12.1-27-27 0-14.9 12.1-27 27-27 14.9 0 27 12.1 27 27zm76.1 27.2c-1.7-35.7-9.9-67.3-35.9-92.4-26-26-56.7-34.2-92.4-35.9-36.4-2.1-144.8-2.1-181.2 0-35.7 1.7-67.3 9.9-92.4 35.9-26 26-34.2 56.7-35.9 92.4-2.1 36.4-2.1 144.8 0 181.2 1.7 35.7 9.9 67.3 35.9 92.4 26 26 56.7 34.2 92.4 35.9 36.4 2.1 144.8 2.1 181.2 0 35.7-1.7 67.3-9.9 92.4-35.9 26-26 34.2-56.7 35.9-92.4 2.1-36.4 2.1-144.8 0-181.2zm-48.2 222.3c-7.8 19.5-22.9 34.6-42.4 42.4-29.4 11.7-99.2 9-132.1 9s-102.7 2.6-132.1-9c-19.5-7.8-34.6-22.9-42.4-42.4-11.7-29.4-9-99.2-9-132.1s-2.6-102.7 9-132.1c7.8-19.5 22.9-34.6 42.4-42.4 29.4-11.7 99.2-9 132.1-9s102.7-2.6 132.1 9c19.5 7.8 34.6 22.9 42.4 42.4 11.7 29.4 9 99.2 9 132.1s2.6 102.7-9 132.1z"></path></svg>`,
-    alt: "Instagram",
-  },
+  { href: "https://www.facebook.com", icon: Facebook, alt: "Facebook" },
+  { href: "https://www.twitter.com", icon: Twitter, alt: "Twitter" },
+  { href: "https://www.linkedin.com", icon: Linkedin, alt: "LinkedIn" },
+  { href: "https://www.instagram.com", icon: Instagram, alt: "Instagram" },
 ];
 
 export default function ContactPage() {
-  const contactTest = true
+  const contactTest = true;
+
   return (
-    <>
+    <div className="">
       <Banner
-        backgroundImage="images/banner.jpg"
+        backgroundImage="/images/banner.jpg"
         overlayColor="gray"
         overlayOpacity={0.5}
-        heading="Contact Us"
+        heading="Cost Calculator"
       />
 
-      <div className="container-main m-t-80 px-4 py-8">
-        <div className="shadow-lg px-8 py-8 mb-8 bg-white">
-          <h2 className="text-3xl font-bold mb-6">Contact Information</h2>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-            {contactDetails.map((detail, index) => (
-              <div
-                key={index}
-                className="rounded-lg p-6 border-gray-100 border-2 bg-slate-50"
-              >
-                <h3 className="text-xl font-semibold mb-4">{detail.title}</h3>
-                <p className="text-lg">{detail.value}</p>
-              </div>
-            ))}
-          </div>
-          <ContactForm contactTest={contactTest} />
+      <div className="container-main shadow-xl relative mx-auto mar-top px-4 py-12 z-150 bg-white">
+        <div className="rounded-lg overflow-hidden">
+          <div className="p-8">
+            <h2 className="text-3xl font-bold mb-8">
+              Contact Information
+            </h2>
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
+              {contactDetails.map((detail, index) => (
+                <div
+                  key={index}
+                  className="flex items-start space-x-4 p-6 bg-gray-50 rounded-lg border border-gray-200"
+                >
+                  <detail.icon className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <div>
+                    <h3 className="text-xl font-semibold mb-2">
+                      {detail.title}
+                    </h3>
+                    <p className="text-gray-600">{detail.value}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
 
-          <h2 className="text-3xl font-bold mb-6">Follow Us</h2>
-          <div className="flex justify-center space-x-6">
-            {socialLinks.map((link, index) => (
-              <a
-                key={index}
-                href={link.href}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-gray-600 hover:text-gray-800 transition-colors duration-300"
-              >
-                <span dangerouslySetInnerHTML={{ __html: link.svg }} />
-                <span className="sr-only">{link.alt}</span>
-              </a>
-            ))}
+            <ContactForm contactTest={contactTest} />
+
+            <div className="mt-10">
+              <h2 className="text-2xl font-bold mb-6">Follow Us</h2>
+              <div className="flex space-x-6">
+                {socialLinks.map((link, index) => (
+                  <a
+                    key={index}
+                    href={link.href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-gray-600 hover:text-blue-600 transition-colors duration-300"
+                  >
+                    <link.icon className="w-6 h-6" />
+                    <span className="sr-only">{link.alt}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div className="mt-8">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.639304275931!2d77.4768641!3d12.9949067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3dec1a4dd35f%3A0xc37645f0ffcb4cf6!2sViswa%20Panelcrafts%3A%20Modular%20Furniture%20Factory!5e0!3m2!1sen!2sin!4v1727077399250!5m2!1sen!2sin"
-          className="w-full h-64"
-          style={{ border: 0 }}
-          allowFullScreen
-          loading="lazy"
-          referrerPolicy="no-referrer-when-downgrade"
-          title="Google Maps"
-        ></iframe>
+     
       </div>
-    </>
+      <div className="mt-12">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.639304275931!2d77.4768641!3d12.9949067!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae3dec1a4dd35f%3A0xc37645f0ffcb4cf6!2sViswa%20Panelcrafts%3A%20Modular%20Furniture%20Factory!5e0!3m2!1sen!2sin!4v1727077399250!5m2!1sen!2sin"
+            className="w-full h-96 rounded-lg shadow-lg"
+            style={{ border: 0 }}
+            allowFullScreen
+            loading="lazy"
+            referrerPolicy="no-referrer-when-downgrade"
+            title="Google Maps"
+          ></iframe>
+        </div>
+    </div>
   );
 }

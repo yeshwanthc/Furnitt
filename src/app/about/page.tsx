@@ -6,12 +6,13 @@ import { InfiniteMovingCardsDemo } from "@/components/InCards";
 import TeamSection from "./Team";
 
 import "../../../styles/About.scss";
+import OurPrinciples from "./OurPrinciples";
 
 const AboutPage = () => {
   return (
     <div>
       <Banner
-        backgroundImage="images/banner.jpg"
+        backgroundImage="/images/banner.jpg"
         overlayColor="gray"
         overlayOpacity={0.5}
         heading="About Us"
@@ -46,57 +47,7 @@ const AboutPage = () => {
 </section>
 
 
-      <div className="about-section container-main py-[60px]">
-        <div className="content-block">
-        <div className="ot-heading flex justify-center flex-col items-center">
-					<span> OUR PRINCIPLES </span>
-          <p>History | Vission | Mission</p>
-	
-				</div>
-        </div>
-
-        <div className="images-block">
-          <div className="image-container">
-            <img src="/images/1.png" alt="Furnitt History Image 1" />
-            <div className="overlay">
-              <h2>Our History</h2>
-              <h4>A Legacy of Excellence</h4>
-              <p>
-                Founded in 2017, Furnitt started as a small team of passionate
-                designers with a vision to revolutionize the interior design
-                industry. Over the years, we&apos;ve grown into a leading firm,
-                renowned for our innovative approach and impeccable
-                craftsmanship. From humble beginnings, we have expanded our
-                portfolio to include a wide range of residential and commercial
-                projects across India. Our journey is marked by continuous
-                learning, adaptation, and a relentless pursuit of excellence.
-              </p>
-            </div>
-          </div>
-          <div className="image-container">
-            <img src="/images/2.png" alt="Furnitt History Image 2" />
-            <div className="overlay">
-              <h2>Our Vision</h2>
-              To be the leading interior design firm, known for transforming
-              spaces with creativity, quality, and innovation, creating
-              environments that enhance the lives of our clients.
-            </div>
-          </div>
-          <div className="image-container">
-            <img src="/images/3.png" alt="Furnitt History Image 3" />
-            <div className="overlay">
-              <h2>Our Mission</h2>
-
-              <p>
-                To deliver exceptional interior design services by understanding
-                our clients needs, providing personalized solutions, and
-                ensuring every project is executed with precision, on time, and
-                within budget.
-              </p>
-            </div>
-          </div>
-        </div>
-      </div>
+      <OurPrinciples />
 
       {/* <section className="container mx-auto py-12">
         <h3 className="text-4xl font-bold mb-6 text-center">
@@ -110,7 +61,7 @@ const AboutPage = () => {
           customer satisfaction sets us apart from the rest.
         </p>
       </section> */}
-<TeamSection />
+{/* <TeamSection /> */}
       <section className="py-12">
         <div className="container mx-auto">
           <h3 className="text-4xl font-bold text-center">

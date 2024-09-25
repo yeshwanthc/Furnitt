@@ -10,7 +10,6 @@ import { Alert, AlertDescription } from "@/components/ui/alert"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
-import { Select, SelectContent, SelectItem,SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Textarea } from "@/components/ui/textarea"
 
 
@@ -92,7 +91,7 @@ export default function ContactForm({ contactTest }) {
               onChange={handleChange}
               required
               aria-required="true"
-              placeholder="John Doe"
+              placeholder="Enter Your Name"
             />
           </div>
           <div className="space-y-2">
@@ -105,7 +104,7 @@ export default function ContactForm({ contactTest }) {
               onChange={handleChange}
               required
               aria-required="true"
-              placeholder="john@example.com"
+              placeholder="Enter Your Email Address"
             />
           </div>
           <div className="space-y-2">
@@ -118,7 +117,7 @@ export default function ContactForm({ contactTest }) {
               onChange={handleChange}
               required
               aria-required="true"
-              placeholder=""
+              placeholder="+1234567890"
             />
           </div>
           <div className="space-y-2">
@@ -130,23 +129,21 @@ export default function ContactForm({ contactTest }) {
               onChange={handleChange}
               required
               aria-required="true"
-              placeholder="Bangalore"
+              placeholder="Enter Your City"
             />
           </div>
         </div>
         <div className="space-y-2">
           <Label htmlFor="location">Location</Label>
-          <Select name="location" value={formData.location} onValueChange={handleLocationChange}>
-            <SelectTrigger id="location" aria-required="true">
-              <SelectValue placeholder="Select a location" />
-            </SelectTrigger>
-            <SelectContent>
-              <SelectItem value="north">North</SelectItem>
-              <SelectItem value="south">South</SelectItem>
-              <SelectItem value="east">East</SelectItem>
-              <SelectItem value="west">West</SelectItem>
-            </SelectContent>
-          </Select>
+          <Input
+              id="location"
+              name="location"
+              value={formData.location}
+              onChange={handleChange}
+              required
+              aria-required="true"
+              placeholder="Enter Your Location"
+            />
         </div>
         <div className="space-y-2">
           <Label htmlFor="requirement">Your Requirement</Label>
