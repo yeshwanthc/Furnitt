@@ -63,7 +63,7 @@ const AboutPage = () => {
       </section> */}
 {/* <TeamSection /> */}
       <section className="py-12">
-        <div className="container mx-auto">
+        <div className="container-main mx-auto">
           <h3 className="text-4xl font-bold text-center">
             What Our Clients Say
           </h3>

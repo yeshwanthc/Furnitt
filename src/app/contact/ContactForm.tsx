@@ -158,7 +158,7 @@ export default function ContactForm({ contactTest }) {
             placeholder="Please describe your requirements..."
           />
         </div>
-        <Button type="submit" className="w-full" disabled={isSubmitting}>
+        <Button type="submit" className="w-full bg-black" disabled={isSubmitting}>
           {isSubmitting ? 'Sending...' : 'Send Message'}
         </Button>
     

@@ -4,6 +4,7 @@ import Image from "next/image";
 import Client1 from "../../public/images/1.png";
 import Client2 from "../../public/images/2.png";
 import Client3 from "../../public/images/3.png";
+import { InfiniteMovingCardsDemo } from "./InCards";
 
 export default function Testimonials() {
     const testimonials = [
@@ -28,7 +29,8 @@ export default function Testimonials() {
       ];
 
   return (
-    <div className="py-[60px] ">
+    <>
+     {/* <div className="py-[60px] ">
       <div className="container-main text-center">
         <h5 className="text-sm text-gray-500">Testimonials</h5>
         <h2 className="text-4xl text-green-700 font-bold">What Clients Say</h2>
@@ -52,6 +54,16 @@ export default function Testimonials() {
           ))}
         </div>
       </div>
-    </div>
+    </div> */}
+     <section className="py-12">
+        <div className="container-main mx-auto">
+          <h3 className="text-4xl font-bold text-center">
+            What Our Clients Say
+          </h3>
+
+          <InfiniteMovingCardsDemo />
+        </div>
+      </section></>
+   
   );
 }

@@ -57,7 +57,7 @@ export default function ContactPage() {
                   key={index}
                   className="flex items-start space-x-4 p-6 bg-gray-50 rounded-lg border border-gray-200"
                 >
-                  <detail.icon className="w-6 h-6 text-blue-600 flex-shrink-0 mt-1" />
+                  <detail.icon className="w-6 h-6 text-black flex-shrink-0 mt-1" />
                   <div>
                     <h3 className="text-xl font-semibold mb-2">
                       {detail.title}
