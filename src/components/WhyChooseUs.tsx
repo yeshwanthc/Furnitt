@@ -1,6 +1,8 @@
 import React from "react"
+
+import { PackageCheck, Palette,Sofa, Trophy } from "lucide-react"
+
 import { Card, CardContent } from "@/components/ui/card"
-import { PackageCheck, Trophy, Sofa, Palette } from "lucide-react"
 
 const benefits = [
   {

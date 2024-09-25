@@ -3,10 +3,9 @@ import React from "react";
 import Banner from "@/components/Banner";
 import { InfiniteMovingCardsDemo } from "@/components/InCards";
 
-import TeamSection from "./Team";
+import OurPrinciples from "./OurPrinciples";
 
 import "../../../styles/About.scss";
-import OurPrinciples from "./OurPrinciples";
 
 const AboutPage = () => {
   return (
@@ -40,8 +39,8 @@ const AboutPage = () => {
     </p>
 
     <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start">
-      <button className="button_one">View Portfolio</button>
-      <button className="button_one">Book Design Consultancy</button>
+      <a href="/gallery" className="button_one">View Portfolio</a>
+      <a href="/contact" className="button_one">Book Design Consultancy</a>
     </div>
   </div>
 </section>

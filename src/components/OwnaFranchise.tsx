@@ -9,7 +9,6 @@ import {
   Users,
 } from "lucide-react";
 
-import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -64,7 +63,7 @@ export default function OwnAFranchise() {
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-100 to-white">
-      <div className="container mx-auto px-4 py-16">
+      <div className="container-main mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold text-center mb-4">
           Own a Cabinet Factory Franchise
         </h1>
@@ -80,7 +79,7 @@ export default function OwnAFranchise() {
             >
               <CardHeader>
                 <CardTitle className="flex items-center text-lg font-semibold">
-                  <span className="mr-2 text-primary">{benefit.icon}</span>
+                  <span className="mr-2 text-primary text-black">{benefit.icon}</span>
                   {benefit.title}
                 </CardTitle>
               </CardHeader>
@@ -92,9 +91,9 @@ export default function OwnAFranchise() {
         </div>
 
         <div className="text-center">
-          <Button size="lg" className="text-lg px-8 py-6">
+          <a href="/contact" className="text-sm btn text-white px-6 py-4 bg-black">
             Apply for Franchise
-          </Button>
+          </a>
         </div>
 
       

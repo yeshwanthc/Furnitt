@@ -71,7 +71,6 @@ export default function MultistepCostCalculator() {
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
     console.log("Form submitted:", formData)
-    // Here you would typically send the data to your backend
   }
 
   return (
@@ -275,9 +274,9 @@ export default function MultistepCostCalculator() {
           </Button>
         )}
         {step < 6 ? (
-          <Button onClick={handleNext}>Next</Button>
+          <Button className="bg-black" onClick={handleNext}>Next</Button>
         ) : (
-          <Button onClick={handleSubmit}>Submit</Button>
+          <Button className="bg-black" onClick={handleSubmit}>Submit</Button>
         )}
       </CardFooter>
     </Card>

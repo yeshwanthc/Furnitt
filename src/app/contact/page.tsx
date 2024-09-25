@@ -1,15 +1,18 @@
 import React from "react";
+
 import {
-  Mail,
-  Phone,
-  MapPin,
   Facebook,
-  Twitter,
-  Linkedin,
   Instagram,
+  Linkedin,
+  Mail,
+  MapPin,
+  Phone,
+  Twitter,
 } from "lucide-react";
-import ContactForm from "./ContactForm";
+
 import Banner from "@/components/Banner";
+
+import ContactForm from "./ContactForm";
 
 const contactDetails = [
   { title: "Email", value: "reachus@furnitt.in", icon: Mail },

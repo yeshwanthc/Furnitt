@@ -36,12 +36,6 @@ export default function ContactForm({ contactTest }) {
     }))
   }
 
-  const handleLocationChange = (value: string) => {
-    setFormData(prevData => ({
-      ...prevData,
-      location: value
-    }))
-  }
 
   const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault()
