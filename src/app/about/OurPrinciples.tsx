@@ -42,7 +42,7 @@ export default function OurPrinciples() {
           {principles.map((principle, index) => (
             <Card key={index} className="overflow-hidden group perspective">
               <CardContent className="p-0">
-                <div className="relative w-full h-[400px] transition-all duration-2000 [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]">
+                <div className="relative w-full h-[400px] transition-all  [transform-style:preserve-3d] group-hover:[transform:rotateY(180deg)]" style={{ transitionDuration: '700ms' }}>
                   <div className="absolute inset-0 [backface-visibility:hidden]">
                     <Image
                       src={principle.image}

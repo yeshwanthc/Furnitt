@@ -153,7 +153,7 @@ export default function ContactForm({ contactTest }) {
           />
         </div>
         <Button type="submit" className="w-full bg-black" disabled={isSubmitting}>
-          {isSubmitting ? 'Sending...' : 'Send Message'}
+          {isSubmitting ? 'Sending...' : 'Submit'}
         </Button>
     
       </form>

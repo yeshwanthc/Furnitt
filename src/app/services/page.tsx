@@ -10,73 +10,74 @@ const services = [
     title: "Residential Interiors",
     subtitle: "Crafting Your Dream Home",
     description:
-      "Your home is more than just a place to live – it's a reflection of who you are. At Furnitt, we specialize in creating beautiful, functional spaces that cater to your lifestyle and aesthetic preferences. From elegant living rooms to serene bedrooms and everything in between, our residential interior services are designed to make your home a true sanctuary. Let us help you transform your living space into the home you've always dreamed of.",
-      img: "/images/1.png",
+      "Transform your home into a sanctuary with personalized, functional spaces that reflect your unique style. From elegant living rooms to serene bedrooms, we create interiors that enhance comfort and aesthetics.",
+    img: "/images/1.png",
   },
   {
     title: "Commercial Interiors",
     subtitle: "Designing Spaces That Work for You",
     description:
-      "In the business world, your environment plays a crucial role in productivity and brand identity. Furnitt’s commercial interior services focus on creating dynamic, efficient, and visually stunning spaces that inspire employees and impress clients. From modern office layouts to vibrant retail spaces, our designs are crafted to meet the specific needs of your business, helping you create an environment that fosters success.",
-      img: "/images/2.png",
+      "Boost productivity and brand identity with tailored commercial spaces. Our designs inspire employees and impress clients, from sleek offices to vibrant retail environments.",
+    img: "/images/2.png",
   },
   {
     title: "Designer Ceilings",
     subtitle: "Elevate Your Space, Starting from the Top",
     description:
-      "A well-designed ceiling can completely transform a room, adding elegance and depth to your interiors. At Furnitt, we offer a range of designer ceiling options that are both functional and aesthetically pleasing. Whether you prefer intricate patterns or sleek, modern designs, our ceilings are crafted to enhance the overall look and feel of your space.",
-      img: "/images/services/1.png",
+      "Enhance your interiors with stunning ceiling designs that add depth and elegance. Whether intricate patterns or modern simplicity, our ceilings transform any room.",
+    img: "/images/services/1.png",
   },
   {
     title: "Wood Works",
     subtitle: "Timeless Craftsmanship, Modern Design",
     description:
-      "Our woodwork services bring warmth and sophistication to any space. From custom cabinetry to intricate wall panels, our skilled craftsmen create woodwork that combines traditional techniques with contemporary design. Let us add a touch of natural beauty to your home or office with our bespoke woodwork solutions.",
+      "Add warmth and sophistication with bespoke woodwork. From custom cabinetry to wall panels, our craftsmanship blends traditional techniques with modern design.",
     img: "/images/services/2.png",
   },
   {
     title: "Amazing Flooring",
     subtitle: "The Foundation of Your Space’s Aesthetic",
     description:
-      "The right flooring sets the tone for your entire space. At Furnitt, we offer a variety of flooring options that are both durable and stylish. Whether you’re looking for the richness of hardwood, the elegance of marble, or the versatility of tiles, we have the perfect solution to complement your interior design.",
-      img: "/images/services/3.png",
+      "Set the tone with stylish, durable flooring. Choose from hardwood, marble, or tile to complement your space and elevate your interior design.",
+    img: "/images/services/3.png",
   },
   {
     title: "Glass Innovation",
     subtitle: "Shaping Modern Spaces with Elegance",
     description:
-      "Glass adds a modern, sleek touch to any interior. Our glass innovation services include everything from partitions and staircases to custom glass furnishings and doors. With a focus on creativity and precision, we design glass features that enhance natural light and add a contemporary edge to your space.",
-      img: "/images/services/4.png",
+      "Bring a sleek, modern edge to your interiors with custom glass partitions, staircases, and furnishings. Our designs maximize natural light and add contemporary flair.",
+    img: "/images/services/4.png",
   },
   {
     title: "Wall Covers",
     subtitle: "Transforming Walls into Works of Art",
     description:
-      "Walls are the canvas of your space, and with Furnitt’s wall cover services, we turn them into masterpieces. From designer wallpapers to unique stone cladding, we offer a variety of wall treatments that add texture, color, and personality to your interiors. Let us help you create walls that tell a story and elevate your space.",
-      img: "/images/services/5.png",
+      "Turn your walls into artistic statements with designer wallpapers, stone cladding, and more. Our treatments add texture, color, and personality to every room.",
+    img: "/images/services/5.png",
   },
   {
     title: "Furniture",
     subtitle: "Comfort Meets Style",
     description:
-      "Furniture is the cornerstone of any interior design, and at Furnitt, we offer custom furniture solutions that combine comfort with style. Whether you need a statement piece for your living room or functional furniture for your office, our designs are crafted to fit your space and lifestyle perfectly.",
-      img: "/images/services/6.png",
+      "Custom furniture solutions that blend comfort and style. Whether for home or office, our pieces are tailored to enhance both form and function.",
+    img: "/images/services/6.png",
   },
   {
     title: "Home Automation",
     subtitle: "Control Your Home at Your Fingertips",
     description:
-      "Step into the future with Furnitt’s home automation services. We integrate smart technology into your home, allowing you to control lighting, climate, security, and more with just a touch. Our automation solutions are designed to enhance your comfort, convenience, and energy efficiency, making your home smarter and more responsive to your needs.",
-      img: "/images/services/7.png",
+      "Seamlessly integrate smart technology into your home for enhanced convenience and efficiency. Control lighting, security, and more with a touch.",
+    img: "/images/services/7.png",
   },
   {
     title: "Electrical Fixtures",
     subtitle: "Lighting Up Your World with Precision",
     description:
-      "Lighting plays a crucial role in the ambiance and functionality of any space. Furnitt’s electrical fixture services include the installation of designer lights, fans, and other essential fixtures that not only illuminate your space but also enhance its aesthetic appeal. Let us brighten up your home or office with our expertly installed, energy-efficient solutions.",
-      img: "/images/services/8.png",
+      "Illuminate your space with expertly installed designer lighting and fixtures. Our energy-efficient solutions enhance both functionality and style.",
+    img: "/images/services/8.png",
   },
 ];
+
 
 const recentProjects = [
   {
@@ -137,7 +138,7 @@ const ServicesPage = () => {
           ))}
         </div>
 
-        <div className="text-center my-8">
+        {/* <div className="text-center my-8">
           <AnimatedText
             text="Recent Projects"
             delayPerWord={0.4}
@@ -156,7 +157,7 @@ const ServicesPage = () => {
               <p className="text-gray-700">{project.description}</p>
             </div>
           ))}
-        </div>
+        </div> */}
         <HowItWorks />
       </div>
     </>
